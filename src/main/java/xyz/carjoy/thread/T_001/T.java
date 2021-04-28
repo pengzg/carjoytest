@@ -2,6 +2,7 @@ package main.java.xyz.carjoy.thread.T_001;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class T {
     volatile int count = 0;
@@ -21,6 +22,7 @@ public class T {
         threads.forEach((o)->o.start());
         threads.forEach((o)->{
             try {
+
                 o.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
