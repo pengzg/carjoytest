@@ -2,6 +2,9 @@ package main.java.xyz.carjoy.thread.c02005;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 加锁的范围  粗细度   
+ */
 public class FineCoarseLock {
 
     int count = 0;
