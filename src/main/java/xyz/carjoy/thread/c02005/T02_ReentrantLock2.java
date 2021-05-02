@@ -1,8 +1,5 @@
 package main.java.xyz.carjoy.thread.c02005;
 
-import main.java.xyz.carjoy.thread.T_001.T;
-
-import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
