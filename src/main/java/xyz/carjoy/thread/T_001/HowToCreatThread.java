@@ -12,7 +12,7 @@ public class HowToCreatThread {
 
         @Override
         public void run(){
-            System.out.println("this is MyThread");
+            System.out.println("this is "+ Thread.currentThread().getName());
         }
     }
 
@@ -20,7 +20,7 @@ public class HowToCreatThread {
 
         @Override
         public void run() {
-            System.out.println("this is myRun ");
+            System.out.println("this is "+Thread.currentThread().getName());
         }
     }
 
@@ -37,7 +37,7 @@ public class HowToCreatThread {
 //        01
         new MyThread().start();
 //02
-        new Thread(new MyRun()).start();
+        new Thread(new MyRun(),"myRun").start();
 
 // 03
 
@@ -45,7 +45,7 @@ public class HowToCreatThread {
         t.start();
 //04
         new Thread(()->{
-            System.out.println("use lambda to creat a thread"+Thread.currentThread().getName());
+            System.out.println("use lambda to creat a thread "+Thread.currentThread().getName());
         },"04thread").start();
 
 // 05
