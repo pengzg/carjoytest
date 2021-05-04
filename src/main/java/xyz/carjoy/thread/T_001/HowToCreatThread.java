@@ -34,20 +34,21 @@ public class HowToCreatThread {
     }
 
     public static void main(String[] args) {
+//        01
         new MyThread().start();
-
+//02
         new Thread(new MyRun()).start();
 
-
+// 03
 
         Thread t = new Thread(new FutureTask<String>(new MyCall()));
         t.start();
-
+//04
         new Thread(()->{
-            System.out.println("use lambda to creat a thread");
-        }).start();
+            System.out.println("use lambda to creat a thread"+Thread.currentThread().getName());
+        },"04thread").start();
 
-
+// 05
         ExecutorService service = Executors.newCachedThreadPool();
         service.execute(()->{
             System.out.println("Hello ThreadPool");
