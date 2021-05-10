@@ -1,15 +1,12 @@
 package main.java.xyz.carjoy.thread.T_001;
 
-import oracle.jvm.hotspot.jfr.JFRTypeIDs;
-
-import javax.swing.text.html.StyleSheet;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
 public class HowToCreatThread {
-
+    // 类继承Mythread
     static class MyThread extends Thread{
 
         
@@ -18,7 +15,7 @@ public class HowToCreatThread {
             System.out.println("this is "+ Thread.currentThread().getName());
         }
     }
-
+      // 类实现Runnable接口
     static class MyRun implements Runnable{
 
         @Override
@@ -66,9 +63,7 @@ public class HowToCreatThread {
             new Thread(()->{
                 System.out.println("use lambda to creat a thread "+Thread.currentThread().getName());
             },"04thread---"+i).start();
-
-
-
+            
         }
 
 
