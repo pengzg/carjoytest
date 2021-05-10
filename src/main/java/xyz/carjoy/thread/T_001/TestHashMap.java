@@ -26,6 +26,14 @@ public class TestHashMap {
         public MyThread(int start) {
             this.start = start;
         }
+
+        @Override
+        public void run(){
+            for (int i = start; i < start+gap; i++) {
+                m.put(keys[i],values[i]);
+
+            }
+        }
     }
 
     public static void main(String[] args) {
