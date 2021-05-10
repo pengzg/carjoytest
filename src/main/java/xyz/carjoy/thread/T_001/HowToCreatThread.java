@@ -12,6 +12,7 @@ public class HowToCreatThread {
 
     static class MyThread extends Thread{
 
+        
         @Override
         public void run(){
             System.out.println("this is "+ Thread.currentThread().getName());
@@ -61,6 +62,13 @@ public class HowToCreatThread {
         // 创建100个线程
         for (int i = 0; i < 100; i++) {
             new Thread(new MyRun(),"thread"+i).start();
+
+            new Thread(()->{
+                System.out.println("use lambda to creat a thread "+Thread.currentThread().getName());
+            },"04thread---"+i).start();
+
+
+
         }
 
 
