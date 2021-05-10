@@ -1,5 +1,7 @@
 package main.java.xyz.carjoy.thread.T_001;
 
+import oracle.jvm.hotspot.jfr.JFRTypeIDs;
+
 import javax.swing.text.html.StyleSheet;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
@@ -55,6 +57,12 @@ public class HowToCreatThread {
         });
 
         service.shutdown();
+
+        // 创建100个线程
+        for (int i = 0; i < 100; i++) {
+            new Thread(new MyRun(),"thread"+i).start();
+        }
+
 
 
     }
