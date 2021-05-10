@@ -18,8 +18,6 @@ public class T {
         for (int i=0; i<10; i++) {
             threads.add(new Thread(t::m,"thread"+i));
         }
-
-
         threads.forEach((o)->o.start());
         threads.forEach((o)->{
             try {
