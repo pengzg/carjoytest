@@ -19,6 +19,7 @@ public class T {
             threads.add(new Thread(t::m,"thread"+i));
         }
 
+
         threads.forEach((o)->o.start());
         threads.forEach((o)->{
             try {
