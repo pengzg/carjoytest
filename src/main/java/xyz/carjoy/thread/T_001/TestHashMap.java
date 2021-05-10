@@ -1,5 +1,6 @@
 package main.java.xyz.carjoy.thread.T_001;
 
+import javax.swing.text.StyledEditorKit;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -38,6 +39,33 @@ public class TestHashMap {
 
     public static void main(String[] args) {
         System.out.println("main");
+
+        long start  = System.currentTimeMillis();
+        Thread[] threads = new Thread[THREAD_COUNT];
+
+        for (int i = 0; i < threads.length; i++) {
+            threads[i] = new MyThread(i*(count/THREAD_COUNT));
+        }
+
+        for (Thread t :
+                threads) {
+            t.start();
+        }
+
+        for (Thread t :
+                threads) {
+
+            try {
+                t.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        long end = System.currentTimeMillis();
+
+        System.out.println(end-start);
+        System.out.println(m.size());
         
     }
 }
