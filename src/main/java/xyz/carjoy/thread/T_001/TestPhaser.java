@@ -25,6 +25,7 @@ public class TestPhaser {
         }
         new Thread(new Person("新郎")).start();
         new Thread(new Person("新娘")).start();
+        
     }
 
     static class MarriagePhaser extends Phaser{
