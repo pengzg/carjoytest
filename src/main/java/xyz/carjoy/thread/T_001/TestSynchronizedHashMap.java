@@ -6,7 +6,8 @@ import java.util.*;
 
 public class TestSynchronizedHashMap {
 //    static Map<UUID,UUID> m = new Collections.synchronizedMap(new HashMap<UUID,UUID>());
-    static Map<UUID,UUID> m = new Collections.synchronizedMap(new HashMap<UUID,UUID>());
+//    static Map<UUID,UUID> m = new Collections.synchronizedMap(new HashMap<UUID,UUID>());
+    static HashMap<UUID,UUID> m = new HashMap<>();
     static int count = Constants.COUNT;
     static UUID[] keys = new UUID[count];
     static UUID[] values = new UUID[count];
