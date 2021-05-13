@@ -1,10 +1,11 @@
 package main.java.xyz.carjoy.thread.T_001;
 
-import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.LinkedTransferQueue;
 
-public class TestSynchronousQueue {
+public class TestTransferQueue {
+
     public static void main(String[] args) throws InterruptedException {
-        SynchronousQueue<String> strs = new SynchronousQueue<>();
+        LinkedTransferQueue<String> strs = new LinkedTransferQueue<>();
 
         new Thread(()->{
             try {
@@ -12,11 +13,10 @@ public class TestSynchronousQueue {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        },"t1").start();
+        }).start();
 
-        strs.put("aaa");
-//        strs.put("bbb");
-//        strs.add("aaa");
-        System.out.println(strs.size());
+        strs.transfer("aaa");
+
+
     }
 }
