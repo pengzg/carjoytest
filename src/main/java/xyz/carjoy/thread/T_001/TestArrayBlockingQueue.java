@@ -7,20 +7,24 @@ import java.util.concurrent.TimeUnit;
 
 public class TestArrayBlockingQueue {
 
-    static BlockingDeque<String> strs = (BlockingDeque<String>) new ArrayBlockingQueue<String>(10);
+    static ArrayBlockingQueue<String> strs = new ArrayBlockingQueue<String>(10);
 
     static Random r = new Random();
     public static void main(String[] args) throws InterruptedException {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 9; i++) {
              strs.put("a"+i);
         }
 
+        System.out.println(strs);
+        // 如果上面是9循环 则不阻塞  如果是10则是阻塞
 //        strs.put("aaa");
-//
-//        strs.add("aaaa");
-//
-//        strs.offer("aaa");
 
-        strs.offer("a", 1, TimeUnit.SECONDS);
+//       如果上面是9 则正常 否则 异常
+//        strs.add("aaaa");
+//     如果上面是9个 则能加入    如果是10  不改变
+        strs.offer("aaaa");
+
+//        strs.offer("a", 1, TimeUnit.SECONDS);
+        System.out.println(strs);
     }
 }
