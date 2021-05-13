@@ -30,6 +30,7 @@ public class TestHashTable {
         @Override
         public void run(){
             for (int i = start; i < start+gap; i++) {
+//                System.out.printf("  "+i);
                 m.put(keys[i],values[i]);
             }
         }
