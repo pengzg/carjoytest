@@ -9,7 +9,7 @@ public class TestLockCondition2 {
     public static void main(String[] args) {
         char[] aI = "1234567".toCharArray();
         char[] aC = "ABCDEFG".toCharArray();
-        Lock lock = new ReentrantLock();
+        ReentrantLock lock = new ReentrantLock();
         Condition condition1 = lock.newCondition();
         Condition condition2 = lock.newCondition();
 
