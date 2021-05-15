@@ -29,6 +29,7 @@ public class TestPipedStream {
             byte[] buffer = new byte[9];
             try {
                 for (char c : aI) {
+                    System.out.println(c);
                     input1.read(buffer);
                     if (new String(buffer).equals("msg")) {
                         System.out.println(c);
