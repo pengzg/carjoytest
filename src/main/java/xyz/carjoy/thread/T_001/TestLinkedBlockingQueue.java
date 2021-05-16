@@ -10,6 +10,7 @@ public class TestLinkedBlockingQueue {
     static Random r = new Random();
 
     public static void main(String[] args) {
+
        new Thread(()->{
            for (int i = 0; i < 100; i++) {
                try {
@@ -34,5 +35,6 @@ public class TestLinkedBlockingQueue {
                 }
             },"c"+i).start();
         }
+
     }
 }
