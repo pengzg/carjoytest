@@ -20,5 +20,8 @@ public class TestMain {
         System.out.println(i);
         System.out.println(i);
         System.out.println(i);
+        System.out.println(String.class.getClassLoader());
+        System.out.println(TestMain.class.getClassLoader());
     }
+
 }
