@@ -13,6 +13,15 @@ public class Test {
         for (Method method:methods) {
             System.out.println(method.getName());
         }
+
+        Class<?> sClass = Class.forName("main.java.xyz.carjoy.db.Student");
+
+
+        System.out.println(sClass.getDeclaredFields());
+        Method[] sMethods = sClass.getDeclaredMethods();
+        for (Method method:sMethods) {
+            System.out.println(method.getName());
+        }
     }
 
 }
