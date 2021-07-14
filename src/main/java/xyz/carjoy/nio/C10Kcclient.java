@@ -27,5 +27,7 @@ public class C10Kcclient {
             }
         }
         System.out.println("clients:"+clients.size());
+        
+        
     }
 }
