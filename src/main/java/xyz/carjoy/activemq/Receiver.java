@@ -11,6 +11,7 @@ public class Receiver {
                ActiveMQConnectionFactory.DEFAULT_USER,
                ActiveMQConnectionFactory.DEFAULT_PASSWORD,
                "tcp://42.192.16.23:61616");
+       
 
        Connection connection =  activeMQConnectionFactory.createConnection();
        connection.start();
@@ -23,9 +24,9 @@ public class Receiver {
 
        while (true) {
            TextMessage message =   (TextMessage)consumer.receive();
-           System.out.println(message.toString());
+           System.out.println(message.getText());
        }
-
+       
 
     }
 }
