@@ -34,6 +34,7 @@ public class Sender {
 //            if (i % 3 == 0 )   {
 //                session.commit();
 //            }
+            Thread.sleep(3000);
         }
 
 
