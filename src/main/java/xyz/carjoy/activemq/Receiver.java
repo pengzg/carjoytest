@@ -24,6 +24,7 @@ public class Receiver {
 
        while (true) {
            TextMessage message =   (TextMessage)consumer.receive();
+           
            System.out.println(message.getText());
        }
        
