@@ -1,11 +1,11 @@
-package main.java.xyz.carjoy.activemq;
+package main.java.xyz.carjoy.activemq.activemq01;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
 import javax.jms.*;
 
 
-public class Receiver {
+public class Receiver2 {
     public static void main(String[] args) throws Exception {
        ActiveMQConnectionFactory activeMQConnectionFactory =  new ActiveMQConnectionFactory(
                ActiveMQConnectionFactory.DEFAULT_USER,

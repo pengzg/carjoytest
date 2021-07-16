@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.activemq;
+package main.java.xyz.carjoy.activemq.activemq01;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
@@ -23,7 +23,7 @@ public class Sender {
 
         MessageProducer producer =  session.createProducer(queue);
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100000; i++) {
             TextMessage textMessage = session.createTextMessage("hi"+i);
 
             producer.send(textMessage);
