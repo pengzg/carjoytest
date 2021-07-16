@@ -12,26 +12,19 @@ public class Receiver {
                ActiveMQConnectionFactory.DEFAULT_PASSWORD,
                "tcp://42.192.16.23:61616");
 
-        Connection connection =  activeMQConnectionFactory.createConnection();
+       Connection connection =  activeMQConnectionFactory.createConnection();
+       connection.start();
+       Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-        Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-        Queue queue = session.createQueue("test01");
-
-
-        MessageProducer producer =  session.createProducer(queue);
-
-        for (int i = 0; i < 1000; i++) {
-            TextMessage textMessage = session.createTextMessage("hi"+i);
-
-            producer.send(textMessage);
-        }
+       Destination queue = session.createQueue("test01");
 
 
-        connection.close();
+       MessageConsumer consumer = session.createConsumer(queue);
 
-
-
+       while (true) {
+           TextMessage message =   (TextMessage)consumer.receive();
+           System.out.println(message.toString());
+       }
 
 
     }
