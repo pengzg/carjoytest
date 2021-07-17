@@ -24,6 +24,15 @@ public class MyListener implements MessageListener{
             } catch (JMSException e) {
                 e.printStackTrace();
             }
+        }else if(message instanceof BytesMessage) {
+            BytesMessage bytesMessage = (BytesMessage)message;
+            try {
+
+                System.out.println(bytesMessage.readChar());
+
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
         }
 
     }

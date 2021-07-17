@@ -24,11 +24,16 @@ public class Sender {
 
 
         MessageProducer producer =  session.createProducer(queue);
-        // 对象
-        Girl girl = new Girl("Lucy", 28, 20);
 
-        ObjectMessage objectMessage = session.createObjectMessage(girl);
-        producer.send(objectMessage);
+        // 字节流 图 文件小的
+        BytesMessage bytesMessage = session.createBytesMessage();
+        bytesMessage.writeChar('A');
+        producer.send(bytesMessage);
+        // 对象
+//        Girl girl = new Girl("Lucy", 28, 20);
+//
+//        ObjectMessage objectMessage = session.createObjectMessage(girl);
+//        producer.send(objectMessage);
         // 文本
 //        for (int i = 0; i < 100; i++) {
 //            TextMessage textMessage = session.createTextMessage("hi"+i);
