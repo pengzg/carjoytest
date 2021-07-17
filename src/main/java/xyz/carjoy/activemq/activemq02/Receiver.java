@@ -11,8 +11,8 @@ public class Receiver {
                ActiveMQConnectionFactory.DEFAULT_USER,
                ActiveMQConnectionFactory.DEFAULT_PASSWORD,
                "tcp://42.192.16.23:61616");
-       
 
+       activeMQConnectionFactory.setTrustAllPackages(true);
        Connection connection =  activeMQConnectionFactory.createConnection();
        connection.start();
        Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);

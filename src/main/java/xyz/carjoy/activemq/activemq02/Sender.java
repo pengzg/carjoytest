@@ -10,8 +10,11 @@ public class Sender {
                 ActiveMQConnectionFactory.DEFAULT_USER,
                 ActiveMQConnectionFactory.DEFAULT_PASSWORD,
                 "tcp://42.192.16.23:61616");
-
+        activeMQConnectionFactory.setTrustAllPackages(true);
         Connection connection =  activeMQConnectionFactory.createConnection();
+        // 添加信任列表
+
+
 
 //        Session session = connection.createSession(false, Session.CLIENT_ACKNOWLEDGE);
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
@@ -21,27 +24,24 @@ public class Sender {
 
 
         MessageProducer producer =  session.createProducer(queue);
+        // 对象
+        Girl girl = new Girl("Lucy", 28, 20);
 
-        for (int i = 0; i < 100; i++) {
-            TextMessage textMessage = session.createTextMessage("hi"+i);
-
-            if (i % 4 == 0 )   {
-                producer.setPriority(4);
-            } else {
-
-                producer.setPriority(1);
-            }
-//            producer.setTimeToLive(200);
-            producer.send(textMessage);
-//            if (i % 4 == 0 )   {
-//                session.rollback();
-//            }
+        ObjectMessage objectMessage = session.createObjectMessage(girl);
+        producer.send(objectMessage);
+        // 文本
+//        for (int i = 0; i < 100; i++) {
+//            TextMessage textMessage = session.createTextMessage("hi"+i);
 //
-//            if (i % 3 == 0 )   {
-//                session.commit();
+//            if (i % 4 == 0 )   {
+//                producer.setPriority(4);
+//            } else {
+//
+//                producer.setPriority(1);
 //            }
-//            Thread.sleep(1000);
-        }
+//            producer.send(textMessage);
+//
+//        }
 
 
         connection.close();
