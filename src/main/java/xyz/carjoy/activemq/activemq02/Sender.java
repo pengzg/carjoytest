@@ -25,10 +25,14 @@ public class Sender {
 
         MessageProducer producer =  session.createProducer(queue);
 
+        // mapMessage
+        MapMessage mapMessage = session.createMapMessage();
+        mapMessage.setString("address","bjcyllt");
+        producer.send(mapMessage);
         // 字节流 图 文件小的
-        BytesMessage bytesMessage = session.createBytesMessage();
-        bytesMessage.writeChar('A');
-        producer.send(bytesMessage);
+//        BytesMessage bytesMessage = session.createBytesMessage();
+//        bytesMessage.writeChar('A');
+//        producer.send(bytesMessage);
         // 对象
 //        Girl girl = new Girl("Lucy", 28, 20);
 //

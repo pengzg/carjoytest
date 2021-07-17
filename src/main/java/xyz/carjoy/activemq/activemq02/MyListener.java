@@ -1,6 +1,7 @@
 package main.java.xyz.carjoy.activemq.activemq02;
 
 import javax.jms.*;
+import java.util.Map;
 
 
 public class MyListener implements MessageListener{
@@ -29,6 +30,15 @@ public class MyListener implements MessageListener{
             try {
 
                 System.out.println(bytesMessage.readChar());
+
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
+        }else if(message instanceof MapMessage) {
+            MapMessage mapMessage = (MapMessage)message;
+            try {
+
+                System.out.println(mapMessage.getString("address"));
 
             } catch (JMSException e) {
                 e.printStackTrace();
