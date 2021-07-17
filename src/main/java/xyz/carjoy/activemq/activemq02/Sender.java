@@ -24,7 +24,7 @@ public class Sender {
 
 
         MessageProducer producer =  session.createProducer(queue);
-
+        producer.setTimeToLive(1000);
         // mapMessage
         MapMessage mapMessage = session.createMapMessage();
         mapMessage.setString("address","bjcyllt");
