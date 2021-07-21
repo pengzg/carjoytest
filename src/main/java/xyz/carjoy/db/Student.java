@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.db;
+package xyz.carjoy.db;
 
 public class Student extends Person{
 

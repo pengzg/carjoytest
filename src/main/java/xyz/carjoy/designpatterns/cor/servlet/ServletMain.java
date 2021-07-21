@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.designpatterns.cor.servlet;
+package xyz.carjoy.designpatterns.cor.servlet;
 
 import sun.lwawt.macosx.CSystemTray;
 

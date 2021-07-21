@@ -1,11 +1,11 @@
-package main.java.xyz.carjoy.db;
+package xyz.carjoy.db;
 
 import java.lang.reflect.Method;
 
 public class Test {
 
     public static void main(String[] args) throws Exception{
-        Class<?> aClass = Class.forName("main.java.xyz.carjoy.db.Person");
+        Class<?> aClass = Class.forName("xyz.carjoy.db.Person");
 
 
         System.out.println(aClass.getDeclaredFields());
@@ -14,7 +14,7 @@ public class Test {
             System.out.println(method.getName());
         }
 
-        Class<?> sClass = Class.forName("main.java.xyz.carjoy.db.Student");
+        Class<?> sClass = Class.forName("xyz.carjoy.db.Student");
 
 
         System.out.println(sClass.getDeclaredFields());

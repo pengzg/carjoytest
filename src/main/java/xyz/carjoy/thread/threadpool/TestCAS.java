@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.thread.threadpool;
+package xyz.carjoy.thread.threadpool;
 
 public class TestCAS {
     enum ReadyToRun{T1,T2};

@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.designpatterns.singleton;
+package xyz.carjoy.designpatterns.singleton;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.sort;
+package xyz.carjoy.sort;
 
 public class BubbleSort {
 
