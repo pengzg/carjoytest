@@ -5,30 +5,137 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libs/activemq-all-5.16.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Girl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/MyListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_76.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_42_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_client_4_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_common_4_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_logging_4_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_remoting_4_9_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_core_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_kahadb_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_protobuf_activemq_protobuf_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_transport_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_mqtt_client_mqtt_client_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasypt_jasypt_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_0_7_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carjoytest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carjoytest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq01/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq01/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/db/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/db/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/db/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/abstractfactory/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cglib/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/composite/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/FaceFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/Filter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/FilterChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/HtmlFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/Msg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/SensitiveFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/UrlFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/servlet/FaceFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/servlet/Filter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/servlet/FilterChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/servlet/HtmlFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/servlet/Msg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/servlet/SensitiveFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/servlet/ServletMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/cor/servlet/UrlFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/factorymethod/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/observer/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/proxy/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/simplefactory/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/singleton/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/spring/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/spring/Tank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/designpatterns/staticfactory/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/jvm/TestCacheLine$p.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/jvm/TestCacheLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/jvm/TestClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/jvm/TestGC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/jvm/TestMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/jvm/TestObjectSizeAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/jvm/TestStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/jvm/TestSync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/nio/C10Kcclient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/nio/NIOTest01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq01/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/sort/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/HowToCreatThread$MyCall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/HowToCreatThread$MyRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/HowToCreatThread$MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/HowToCreatThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/T.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/T03_ReentrantLock3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestArrayBlockingQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestConcurrentHashMap$MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestConcurrentHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestConcurrentMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestConcurrentQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestCopyOnWrite$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestCopyOnWrite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestCyclicBarrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestDelayQueue$MyTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestDelayQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestHashMap$MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestHashTable$MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestHashTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestLinkedBlockingQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestPhaser$MarriagePhaser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestPhaser$Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestPhaser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestPriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestSynchronizedHashMap$MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestSynchronizedHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestSynchronousQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestTicketSeller1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestTicketSeller2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/T_001/TestTransferQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/c02005/FineCoarseLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/c02005/T01_ReentrantLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/c02005/T02_ReentrantLock2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/c02005/T09_TestPhaser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/c02005/T10_TestReadWriteLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/disruptor/T01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestBlockingQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestCAS$ReadyToRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestCAS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestCachedpool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestCompletableFuture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestFixedThreadPool$MyTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestFixedThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestForkJoinPool$AddTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestForkJoinPool$AddTaskRet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestForkJoinPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestFuture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestLockCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestLockCondition2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestLockSupport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestMyRejectedHandler$MyHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestMyRejectedHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestParallelStreamAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestPipedStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestScheduledPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestSingleThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestSyncWaitNotify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestSyncWaitNotify2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestThreadpool$Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestThreadpool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/thread/threadpool/TestTransferQueue.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +154,7 @@
     </option>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />

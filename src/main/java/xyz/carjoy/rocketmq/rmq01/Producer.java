@@ -12,7 +12,7 @@ public class Producer {
         defaultMQProducer.setNamesrvAddr("42.192.16.23:9876");
         defaultMQProducer.start();
        // topic消息的目的地  和message绑定
-        Message msg = new Message("testGroup", new byte[]{1,2,3});
+        Message msg = new Message("testgroup001","test".getBytes());
 
         defaultMQProducer.send(msg);
 
