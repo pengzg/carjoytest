@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04/Consumer4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04/Consumer4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05/Consumer5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05/Producer5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -55,11 +57,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq03" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq02" />
       <recent name="$PROJECT_DIR$/libs" />
-      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Consumer4">
@@ -76,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Producer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq02.Producer" />
       <module name="carjoytest" />
       <extension name="coverage">
