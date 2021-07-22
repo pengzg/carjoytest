@@ -1,6 +1,7 @@
 package xyz.carjoy.rocketmq.rmq05;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
+import org.apache.rocketmq.client.consumer.MessageSelector;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
@@ -13,8 +14,11 @@ public class Consumer5 {
         DefaultMQPushConsumer testConsumer = new DefaultMQPushConsumer("group05");
         //设置服务器
         testConsumer.setNamesrvAddr("42.192.16.23:9876");
+        // select  需要在broker.conf中加  enablePropertyFilter=true
+        MessageSelector messageSelector = MessageSelector.bySql("age >=18 and age<=28");
+
         //每个consumer只能关注一个topic
-        testConsumer.subscribe("test0005", "TAG-B");
+        testConsumer.subscribe("test0005", messageSelector);
         testConsumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
