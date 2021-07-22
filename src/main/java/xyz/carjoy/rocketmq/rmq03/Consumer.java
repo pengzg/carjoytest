@@ -5,6 +5,7 @@ import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
 import org.apache.rocketmq.common.message.MessageExt;
+import org.apache.rocketmq.common.protocol.heartbeat.MessageModel;
 
 import java.util.List;
 
@@ -26,8 +27,13 @@ public class Consumer {
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
             }
         });
-
+        // 设置广播模式
+        testConsumer.setMessageModel(MessageModel.BROADCASTING);
         testConsumer.start();
+
+        // 集群代表一组消费者 有一个消费者消费就行
+        //广播发给每一个consumer 都被消费
+
         System.out.println("testConsumer-->start.......");
         
     }
