@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Sender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq01/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq01/Producer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

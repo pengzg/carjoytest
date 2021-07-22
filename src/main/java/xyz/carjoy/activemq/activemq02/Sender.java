@@ -9,7 +9,9 @@ public class Sender {
         ActiveMQConnectionFactory activeMQConnectionFactory =  new ActiveMQConnectionFactory(
                 ActiveMQConnectionFactory.DEFAULT_USER,
                 ActiveMQConnectionFactory.DEFAULT_PASSWORD,
-                "tcp://42.192.16.23:61616");
+//                "tcp://42.192.16.23:61616"
+                "failover:(tcp://42.192.16.23:61616,tcp://42.192.16.23:61617)?Randomize=false"
+        );
         activeMQConnectionFactory.setTrustAllPackages(true);
         Connection connection =  activeMQConnectionFactory.createConnection();
         // 添加信任列表

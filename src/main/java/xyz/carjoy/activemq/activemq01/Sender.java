@@ -10,7 +10,9 @@ public class Sender {
        ActiveMQConnectionFactory activeMQConnectionFactory =  new ActiveMQConnectionFactory(
                ActiveMQConnectionFactory.DEFAULT_USER,
                ActiveMQConnectionFactory.DEFAULT_PASSWORD,
-               "tcp://42.192.16.23:61616");
+//               "tcp://42.192.16.23:61616"
+               "failover:(tcp://42.192.16.23:61616,tcp://42.192.16.23:61617)?Randomize=false"
+       );
 
         Connection connection =  activeMQConnectionFactory.createConnection();
 
