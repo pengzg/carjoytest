@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04/Consumer4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04/Producer4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq01/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq01/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq02/Producer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq02/Producer2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq03/Producer3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq03/Producer3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq01/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq01/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq02/Producer2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq02/Producer2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq03/Consumer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq03/Consumer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq03/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq03/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq03/Producer3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/carjoy/rocketmq/rmq03/Producer3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04/Consumer4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04/Consumer4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +62,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Producer4">
+  <component name="RunManager" selected="Application.Consumer4">
     <configuration name="Consumer4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq04.Consumer4" />
       <module name="carjoytest" />
@@ -147,8 +137,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Producer4" />
         <item itemvalue="Application.Consumer4" />
+        <item itemvalue="Application.Producer4" />
         <item itemvalue="Application.Producer3" />
         <item itemvalue="Application.Producer2" />
         <item itemvalue="Application.Producer (1)" />

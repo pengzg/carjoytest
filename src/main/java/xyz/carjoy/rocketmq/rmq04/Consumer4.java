@@ -28,7 +28,7 @@ public class Consumer4 {
             }
         });
         // 设置广播模式
-        testConsumer.setMessageModel(MessageModel.BROADCASTING);
+//        testConsumer.setMessageModel(MessageModel.BROADCASTING);
         testConsumer.start();
 
         // 集群代表一组消费者 有一个消费者消费就行
