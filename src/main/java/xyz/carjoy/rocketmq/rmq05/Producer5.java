@@ -17,9 +17,10 @@ public class Producer5 {
         // 多条发送
         // tag 用来过滤消息分组
         Message msg = null;
+
         for (int i = 0; i < 100; i++) {
             msg = new Message("test0005","TAG-B","KEY-A",("test 第"+i+"条").getBytes());
-            msg.putUserProperty("age", (18+i)+"");
+            msg.putUserProperty("age", String.valueOf(18+i));
             producer.send(msg);
         }
 
