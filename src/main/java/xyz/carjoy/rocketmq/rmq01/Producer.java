@@ -16,6 +16,7 @@ public class Producer {
 
         SendResult send = producer.send(msg);
         System.out.println(send.getSendStatus());
+        producer.shutdown();
 
     }
 }
