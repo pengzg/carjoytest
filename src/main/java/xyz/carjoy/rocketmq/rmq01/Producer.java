@@ -3,7 +3,6 @@ package xyz.carjoy.rocketmq.rmq01;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.common.message.Message;
 
-import java.util.Collection;
 
 public class Producer {
     public static void main(String[] args) throws Exception{
