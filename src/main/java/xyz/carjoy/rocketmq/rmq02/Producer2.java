@@ -21,7 +21,7 @@ public class Producer2 {
 //        SendResult send = producer.send(msg);
         // 多条发送
         ArrayList<Message> list = new ArrayList<>();
-        Message msg1 = new Message("test0003","test 第一条".getBytes());
+        Message msg1 = new Message("test0002","test 第一条".getBytes());
 
         list.add(msg1);
 

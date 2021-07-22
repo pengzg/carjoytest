@@ -20,10 +20,10 @@ public class Producer {
 //        SendResult send = producer.send(msg);
         // 多条发送
         ArrayList<Message> list = new ArrayList<>();
-        Message msg1 = new Message("test0002","test 第一条".getBytes());
-        Message msg2 = new Message("test0002","test 第二条".getBytes());
-        Message msg3 = new Message("test0002","test 第三条".getBytes());
-        Message msg4 = new Message("test0002","test 第四条".getBytes());
+        Message msg1 = new Message("test0001","test 第一条".getBytes());
+        Message msg2 = new Message("test0001","test 第二条".getBytes());
+        Message msg3 = new Message("test0001","test 第三条".getBytes());
+        Message msg4 = new Message("test0001","test 第四条".getBytes());
         list.add(msg1);
         list.add(msg2);
         list.add(msg3);

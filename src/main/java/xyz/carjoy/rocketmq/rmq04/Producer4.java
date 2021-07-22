@@ -1,14 +1,10 @@
-package xyz.carjoy.rocketmq.rmq03;
+package xyz.carjoy.rocketmq.rmq04;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendCallback;
-import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
 
-import java.util.ArrayList;
 
-
-public class Producer3 {
+public class Producer4 {
     public static void main(String[] args) throws Exception{
         DefaultMQProducer producer = new DefaultMQProducer("testtopic");
         // 设置nameserver地址
@@ -19,7 +15,8 @@ public class Producer3 {
 //        Message msg = new Message("test0002","tes6666t".getBytes());
 //        SendResult send = producer.send(msg);
         // 多条发送
-        Message msg1 = new Message("test0003","test 第一条".getBytes());
+        // tag 用来过滤消息分组
+        Message msg1 = new Message("test0004","TAG-B","KEY-A","test 第X条".getBytes());
 
 
         producer.sendOneway(msg1);
