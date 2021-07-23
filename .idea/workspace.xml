@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06/Producer6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06/Producer6.java" afterDir="false" />
+>>>>>>> 39a2d5992582c80390fd558e30a4a048b2a53e4b
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -55,14 +59,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq03" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq02" />
-      <recent name="$PROJECT_DIR$/libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Producer5">
+  <component name="RunManager" selected="Application.Producer6">
     <configuration name="Consumer4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq04.Consumer4" />
       <module name="carjoytest" />
@@ -76,25 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Consumer5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq05.Consumer5" />
+    <configuration name="Consumer6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq06.Consumer6" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Producer3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq03.Producer3" />
-      <module name="carjoytest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq03.*" />
+          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,20 +119,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Producer6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq06.Producer6" />
+      <module name="carjoytest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Producer3" />
+      <item itemvalue="Application.Producer5" />
+      <item itemvalue="Application.Consumer6" />
+      <item itemvalue="Application.Producer6" />
       <item itemvalue="Application.Producer4" />
       <item itemvalue="Application.Consumer4" />
-      <item itemvalue="Application.Producer5" />
-      <item itemvalue="Application.Consumer5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Producer5" />
-        <item itemvalue="Application.Consumer5" />
+        <item itemvalue="Application.Producer6" />
         <item itemvalue="Application.Consumer4" />
         <item itemvalue="Application.Producer4" />
-        <item itemvalue="Application.Producer3" />
+        <item itemvalue="Application.Producer5" />
+        <item itemvalue="Application.Consumer6" />
       </list>
     </recent_temporary>
   </component>
