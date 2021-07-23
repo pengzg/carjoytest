@@ -1,14 +1,15 @@
-package xyz.carjoy.rocketmq.rmq01;
+package xyz.carjoy.rocketmq.rmq02;
 
-import org.apache.activemq.transport.stomp.Stomp;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
+import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
+import org.springframework.cache.Cache;
 
 import java.util.ArrayList;
 
 
-public class Producer {
+public class Producer2 {
     public static void main(String[] args) throws Exception{
         DefaultMQProducer producer = new DefaultMQProducer("testtopic");
         // 设置nameserver地址
@@ -20,17 +21,22 @@ public class Producer {
 //        SendResult send = producer.send(msg);
         // 多条发送
         ArrayList<Message> list = new ArrayList<>();
-        Message msg1 = new Message("test0001","test 第一条".getBytes());
-        Message msg2 = new Message("test0001","test 第二条".getBytes());
-        Message msg3 = new Message("test0001","test 第三条".getBytes());
-        Message msg4 = new Message("test0001","test 第四条".getBytes());
+        Message msg1 = new Message("test0002","test 第一条".getBytes());
+
         list.add(msg1);
-        list.add(msg2);
-        list.add(msg3);
-        list.add(msg4);
-        SendResult send = producer.send(list);
-        System.out.println(send);
-        producer.shutdown();
+
+        producer.send(list, new SendCallback() {
+            @Override
+            public void onSuccess(SendResult sendResult) {
+                System.out.println("消息发送成功"+sendResult);
+            }
+
+            @Override
+            public void onException(Throwable throwable) {
+                System.out.println("发送失败"+throwable);
+            }
+        });
+
 
     }
 }

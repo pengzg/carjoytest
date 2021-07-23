@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05/Producer5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05/Producer5.java" afterDir="false" />
+>>>>>>> 06959f22304592e500cbee0ceb895e34434e2083
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -55,17 +59,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04" />
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq03" />
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq02" />
       <recent name="$PROJECT_DIR$/libs" />
-      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Producer">
-    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq01.Consumer" />
+  <component name="RunManager" selected="Application.Producer5">
+    <configuration name="Consumer4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq04.Consumer4" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq01.*" />
+          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq01.Producer" />
+    <configuration name="Consumer5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq05.Consumer5" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq01.*" />
+          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sender (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.activemq.activemq02.Sender" />
+    <configuration name="Producer3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq03.Producer3" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.activemq.activemq02.*" />
+          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,19 +106,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sender" />
+    <configuration name="Producer4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq04.Producer4" />
       <module name="carjoytest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.jvm.TestClassLoader" />
+    <configuration name="Producer5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq05.Producer5" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.jvm.*" />
+          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,19 +133,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Producer" />
-      <item itemvalue="Application.TestClassLoader" />
-      <item itemvalue="Application.Sender" />
-      <item itemvalue="Application.Sender (1)" />
-      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.Producer3" />
+      <item itemvalue="Application.Producer4" />
+      <item itemvalue="Application.Consumer4" />
+      <item itemvalue="Application.Producer5" />
+      <item itemvalue="Application.Consumer5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Producer" />
-        <item itemvalue="Application.Sender (1)" />
-        <item itemvalue="Application.Consumer" />
-        <item itemvalue="Application.Sender" />
-        <item itemvalue="Application.TestClassLoader" />
+        <item itemvalue="Application.Producer5" />
+        <item itemvalue="Application.Consumer5" />
+        <item itemvalue="Application.Consumer4" />
+        <item itemvalue="Application.Producer4" />
+        <item itemvalue="Application.Producer3" />
       </list>
     </recent_temporary>
   </component>

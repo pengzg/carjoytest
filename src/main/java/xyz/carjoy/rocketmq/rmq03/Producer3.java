@@ -1,14 +1,14 @@
-package xyz.carjoy.rocketmq.rmq01;
+package xyz.carjoy.rocketmq.rmq03;
 
-import org.apache.activemq.transport.stomp.Stomp;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
+import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
 
 import java.util.ArrayList;
 
 
-public class Producer {
+public class Producer3 {
     public static void main(String[] args) throws Exception{
         DefaultMQProducer producer = new DefaultMQProducer("testtopic");
         // 设置nameserver地址
@@ -19,18 +19,11 @@ public class Producer {
 //        Message msg = new Message("test0002","tes6666t".getBytes());
 //        SendResult send = producer.send(msg);
         // 多条发送
-        ArrayList<Message> list = new ArrayList<>();
-        Message msg1 = new Message("test0001","test 第一条".getBytes());
-        Message msg2 = new Message("test0001","test 第二条".getBytes());
-        Message msg3 = new Message("test0001","test 第三条".getBytes());
-        Message msg4 = new Message("test0001","test 第四条".getBytes());
-        list.add(msg1);
-        list.add(msg2);
-        list.add(msg3);
-        list.add(msg4);
-        SendResult send = producer.send(list);
-        System.out.println(send);
-        producer.shutdown();
+        Message msg1 = new Message("test0003","test 第一条".getBytes());
 
+
+        producer.sendOneway(msg1);
+
+        System.out.println("停止");
     }
 }
