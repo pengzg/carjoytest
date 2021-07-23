@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06/Producer6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06/Producer6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Consumer4">
+  <component name="RunManager" selected="Application.Producer6">
     <configuration name="Consumer4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq04.Consumer4" />
       <module name="carjoytest" />
@@ -137,11 +138,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Producer6" />
         <item itemvalue="Application.Consumer4" />
         <item itemvalue="Application.Producer4" />
         <item itemvalue="Application.Producer5" />
         <item itemvalue="Application.Consumer6" />
-        <item itemvalue="Application.Producer6" />
       </list>
     </recent_temporary>
   </component>

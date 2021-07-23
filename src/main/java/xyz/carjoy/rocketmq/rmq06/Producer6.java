@@ -23,10 +23,7 @@ public class Producer6 {
             msg.putUserProperty("age", String.valueOf(18+i));
             producer.send(msg);
         }
-
-
-
-
+        
 
         System.out.println("停止");
     }
