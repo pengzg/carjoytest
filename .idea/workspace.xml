@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05/Producer5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05/Producer5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06/Consumer6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06/Producer6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -56,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq03" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq02" />
-      <recent name="$PROJECT_DIR$/libs" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Producer5">
