@@ -42,6 +42,7 @@ public class Producer6 {
 //                return LocalTransactionState.ROLLBACK_MESSAGE;
             }
         });
+
         producer.start();
        // topic消息的目的地  和message绑定
         // 单条发送
