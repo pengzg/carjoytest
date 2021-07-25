@@ -1,7 +1,11 @@
 package xyz.carjoy.rocketmq.rmq08;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
+import org.apache.rocketmq.client.producer.MessageQueueSelector;
 import org.apache.rocketmq.common.message.Message;
+import org.apache.rocketmq.common.message.MessageQueue;
+
+import java.util.List;
 
 
 public class Producer8 {
@@ -26,8 +30,23 @@ public class Producer8 {
 //        }
 
 
-    producer.send(msg);
+//      producer.send(msg);
+        producer.send(msg, new MessageQueueSelector() {
+//            手动选择一个queue
 
+            /**
+             *
+             * @param list
+             * @param message
+             * @param o 对应的arg
+             * @return
+             */
+            @Override
+            public MessageQueue select(List<MessageQueue> list, Message message, Object o) {
+                // 向固定的一个queue里面写消息
+                return list.get((Integer)(o));
+            }
+        }, 1, 3000);
 
         System.out.println("停止");
     }
