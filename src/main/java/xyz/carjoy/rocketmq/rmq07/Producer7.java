@@ -9,6 +9,7 @@ public class Producer7 {
         DefaultMQProducer producer = new DefaultMQProducer("group07");
         // 设置nameserver地址
         producer.setNamesrvAddr("42.192.16.23:9876");
+        producer.setRetryAnotherBrokerWhenNotStoreOK(true);
         producer.start();
        // topic消息的目的地  和message绑定
         // 单条发送
