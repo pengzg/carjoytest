@@ -8,6 +8,11 @@ import org.apache.rocketmq.common.message.MessageExt;
 
 import java.util.List;
 
+/**
+ * 相同的group关注相同的topic 只能有一台机器消费
+ * 不同的group关注相同的topic 每个group都能消费一次
+ */
+
 public class Consumer0701 {
     public static void main(String[] args) throws Exception {
         DefaultMQPushConsumer testConsumer = new DefaultMQPushConsumer("group0701");
