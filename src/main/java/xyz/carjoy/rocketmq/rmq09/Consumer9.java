@@ -25,20 +25,16 @@ public class Consumer9 {
         testConsumer.registerMessageListener(new MessageListenerOrderly() {
             @Override
             public ConsumeOrderlyStatus consumeMessage(List<MessageExt> list, ConsumeOrderlyContext consumeOrderlyContext) {
-                for (MessageExt msg: list
-                ) {
-                    System.out.println(new String(msg.getBody()) );
+                for (MessageExt msg: list) {
+                    System.out.println(new String(msg.getBody()) + "CurrentThread==>"+Thread.currentThread().getName() );
                 }
 
                 return ConsumeOrderlyStatus.SUCCESS;
             }
         });
-        // 设置广播模式
-//        testConsumer.setMessageModel(MessageModel.BROADCASTING);
-        testConsumer.start();
 
-        // 集群代表一组消费者 有一个消费者消费就行
-        //广播发给每一个consumer 都被消费
+        testConsumer.start();
+        
 
         System.out.println("testConsumer-->start.......");
         
