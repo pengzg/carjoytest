@@ -11,16 +11,26 @@ public class Consumer9 {
         DefaultMQPushConsumer testConsumer = new DefaultMQPushConsumer("group09");
         //设置服务器
         testConsumer.setNamesrvAddr("42.192.16.23:9876");
-        // select  需要在broker.conf中加  enablePropertyFilter=true
-//        MessageSelector messageSelector = MessageSelector.bySql("age >=18 and age<=28");
+
 
         //每个consumer只能关注一个topic
         testConsumer.subscribe("test0009", "*");
-
+        /**
+         *   MessageListenerOrderly  一个queue开启一个线程 多个queue开启多个线程
+         */
+        // 最大线程数
+//        testConsumer.setConsumeThreadMax(3);
+        // 最小线程数
+//        testConsumer.setConsumeThreadMin(1);
         testConsumer.registerMessageListener(new MessageListenerOrderly() {
             @Override
             public ConsumeOrderlyStatus consumeMessage(List<MessageExt> list, ConsumeOrderlyContext consumeOrderlyContext) {
-                return null;
+                for (MessageExt msg: list
+                ) {
+                    System.out.println(new String(msg.getBody()) );
+                }
+
+                return ConsumeOrderlyStatus.SUCCESS;
             }
         });
         // 设置广播模式
