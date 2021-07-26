@@ -1,7 +1,6 @@
-package xyz.carjoy.rocketmq.rmq06;
+package xyz.carjoy.rocketmq.rmq07;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.MessageSelector;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
@@ -9,22 +8,26 @@ import org.apache.rocketmq.common.message.MessageExt;
 
 import java.util.List;
 
-public class Consumer6 {
+/**
+ * 相同的group关注相同的topic 只能有一台机器消费
+ * 不同的group关注相同的topic 每个group都能消费一次
+ */
+
+public class Consumer0701 {
     public static void main(String[] args) throws Exception {
-        DefaultMQPushConsumer testConsumer = new DefaultMQPushConsumer("group06");
+        DefaultMQPushConsumer testConsumer = new DefaultMQPushConsumer("group0701");
         //设置服务器
         testConsumer.setNamesrvAddr("42.192.16.23:9876");
         // select  需要在broker.conf中加  enablePropertyFilter=true
 //        MessageSelector messageSelector = MessageSelector.bySql("age >=18 and age<=28");
 
         //每个consumer只能关注一个topic
-//        testConsumer.subscribe("test0006", messageSelector);
-        testConsumer.subscribe("test0006", "*");
+        testConsumer.subscribe("test0007", "*");
         testConsumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
                 for (MessageExt msg: list
-                     ) {
+                ) {
                     System.out.println(new String(msg.getBody()) );
                 }
 
@@ -38,7 +41,7 @@ public class Consumer6 {
         // 集群代表一组消费者 有一个消费者消费就行
         //广播发给每一个consumer 都被消费
 
-        System.out.println("testConsumer-->start.......");
-        
+        System.out.println("testConsumer0701-->start.......");
+
     }
 }

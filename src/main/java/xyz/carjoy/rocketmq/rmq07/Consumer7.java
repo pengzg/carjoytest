@@ -1,4 +1,4 @@
-package xyz.carjoy.rocketmq.rmq06;
+package xyz.carjoy.rocketmq.rmq07;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.MessageSelector;
@@ -9,17 +9,16 @@ import org.apache.rocketmq.common.message.MessageExt;
 
 import java.util.List;
 
-public class Consumer6 {
+public class Consumer7 {
     public static void main(String[] args) throws Exception {
-        DefaultMQPushConsumer testConsumer = new DefaultMQPushConsumer("group06");
+        DefaultMQPushConsumer testConsumer = new DefaultMQPushConsumer("group07");
         //设置服务器
         testConsumer.setNamesrvAddr("42.192.16.23:9876");
         // select  需要在broker.conf中加  enablePropertyFilter=true
 //        MessageSelector messageSelector = MessageSelector.bySql("age >=18 and age<=28");
 
         //每个consumer只能关注一个topic
-//        testConsumer.subscribe("test0006", messageSelector);
-        testConsumer.subscribe("test0006", "*");
+        testConsumer.subscribe("test0007", "*");
         testConsumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
