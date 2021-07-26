@@ -32,10 +32,76 @@ public class Producer9 {
 
 
         for (int i = 0; i < 20; i++) {
-            Message msg = new Message("test0009",("producer9-"+i).getBytes());
+            Message msg = new Message("test0009",("producer9-01-"+i).getBytes());
             producer.send(msg, new MessageQueueSelector() {
 //            手动选择一个queue
+                /**
+                 *
+                 * @param list
+                 * @param message
+                 * @param o 对应的arg
+                 * @return
+                 */
+                @Override
+                public MessageQueue select(List<MessageQueue> list, Message message, Object o) {
+                    // 向固定的一个queue里面写消息
+//                    return list.get((Integer)(o));
+                    MessageQueue queue = list.get(1);
+                    System.out.println(queue.toString());
+                    return queue;
+                }
+            }, 1, 3000);
+        }
 
+        for (int i = 0; i < 20; i++) {
+            Message msg = new Message("test0009",("producer9-02-"+i).getBytes());
+            producer.send(msg, new MessageQueueSelector() {
+//            手动选择一个queue
+                /**
+                 *
+                 * @param list
+                 * @param message
+                 * @param o 对应的arg
+                 * @return
+                 */
+                @Override
+                public MessageQueue select(List<MessageQueue> list, Message message, Object o) {
+                    // 向固定的一个queue里面写消息
+//                    return list.get((Integer)(o));
+                    MessageQueue queue = list.get(2);
+                    System.out.println(queue.toString());
+                    return queue;
+                }
+            }, 2, 3000);
+        }
+
+        for (int i = 0; i < 20; i++) {
+            Message msg = new Message("test0009",("producer9-03-"+i).getBytes());
+            producer.send(msg, new MessageQueueSelector() {
+//            手动选择一个queue
+                /**
+                 *
+                 * @param list
+                 * @param message
+                 * @param o 对应的arg
+                 * @return
+                 */
+                @Override
+                public MessageQueue select(List<MessageQueue> list, Message message, Object o) {
+                    // 向固定的一个queue里面写消息
+//                    return list.get((Integer)(o));
+                    MessageQueue queue = list.get(3);
+                    System.out.println(queue.toString());
+                    return queue;
+                }
+            }, 3, 3000);
+        }
+
+
+        for (int i = 0; i < 20; i++) {
+            Message msg = new Message("test0009",("producer9-00-"+i).getBytes());
+            producer.send(msg, new MessageQueueSelector() {
+//            手动选择一个queue
                 /**
                  *
                  * @param list
@@ -48,11 +114,10 @@ public class Producer9 {
                     // 向固定的一个queue里面写消息
 //                    return list.get((Integer)(o));
                     MessageQueue queue = list.get(0);
+                    System.out.println(queue.toString());
                     return queue;
                 }
             }, 0, 3000);
-            
-
         }
 
 
