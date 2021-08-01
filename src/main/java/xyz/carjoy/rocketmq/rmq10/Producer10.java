@@ -19,7 +19,7 @@ public class Producer10 {
         producer.start();
        // topic消息的目的地  和message绑定
         // 单条发送
-        Message msg = new Message("test00010","tes6666t".getBytes());
+        Message msg = new Message("test00010","tes6666tproduce10".getBytes());
 
         // 多条发送
         MessageQueue msg1 = new MessageQueue("test00010","broker-a", 3);
@@ -29,8 +29,8 @@ public class Producer10 {
         producer.send(msg, new MessageQueueSelector() {
             @Override
             public MessageQueue select(List<MessageQueue> list, Message message, Object o) {
-
-                return list.get(3);
+                System.out.println("list.size()==>"+list.size());
+                return list.get((Integer)o);
             }
         },3);
 
