@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq10/Consumer10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq10/Producer10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq09/Consumer9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq09/Consumer9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq09/Producer9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq09/Producer9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carjoytest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carjoytest.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1veezgnkTX8h3Y2HZtSX12oBsRF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq09" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq10" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -56,14 +58,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq10" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq09" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04" />
-      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq03" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Producer9">
+  <component name="RunManager" selected="Application.Producer10">
     <configuration name="Consumer4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq04.Consumer4" />
       <module name="carjoytest" />
@@ -90,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Producer4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq04.Producer4" />
+    <configuration name="Producer10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.rocketmq.rmq10.Producer10" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq04.*" />
+          <option name="PATTERN" value="xyz.carjoy.rocketmq.rmq10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,18 +133,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Producer6" />
-      <item itemvalue="Application.Producer4" />
       <item itemvalue="Application.Consumer4" />
       <item itemvalue="Application.Producer9" />
       <item itemvalue="Application.Consumer9" />
+      <item itemvalue="Application.Producer10" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Producer9" />
+        <item itemvalue="Application.Producer10" />
         <item itemvalue="Application.Consumer9" />
+        <item itemvalue="Application.Producer9" />
         <item itemvalue="Application.Producer6" />
         <item itemvalue="Application.Consumer4" />
-        <item itemvalue="Application.Producer4" />
       </list>
     </recent_temporary>
   </component>
