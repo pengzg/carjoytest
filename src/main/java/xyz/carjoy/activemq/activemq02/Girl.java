@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-package main.java.xyz.carjoy.activemq.activemq02;
-=======
+
 package xyz.carjoy.activemq.activemq02;
->>>>>>> rocketmq
+
 
 import java.io.Serializable;
 

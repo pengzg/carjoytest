@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/carjoytest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carjoytest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carjoytest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Girl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Girl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/MyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/MyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Sender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq10" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -141,8 +150,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Producer9" />
         <item itemvalue="Application.Consumer9" />
+        <item itemvalue="Application.Producer9" />
         <item itemvalue="Application.Producer10" />
         <item itemvalue="Application.Producer6" />
         <item itemvalue="Application.Consumer4" />

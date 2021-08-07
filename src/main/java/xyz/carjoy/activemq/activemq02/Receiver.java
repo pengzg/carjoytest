@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-package main.java.xyz.carjoy.activemq.activemq02;
-=======
+
 package xyz.carjoy.activemq.activemq02;
->>>>>>> rocketmq
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
@@ -16,7 +13,7 @@ public class Receiver {
                ActiveMQConnectionFactory.DEFAULT_PASSWORD,
                "tcp://42.192.16.23:61616");
 
-       activeMQConnectionFactory.setTrustAllPackages(true);
+//       activeMQConnectionFactory.setTrustAllPackages(true);
        Connection connection =  activeMQConnectionFactory.createConnection();
        connection.start();
        Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
