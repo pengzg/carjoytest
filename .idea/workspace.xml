@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carjoytest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carjoytest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Receiver2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq01/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Girl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Girl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/MyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/MyListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/activemq/activemq02/Sender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
