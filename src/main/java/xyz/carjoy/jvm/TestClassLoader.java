@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.jvm;
+package xyz.carjoy.jvm;
 
 public class TestClassLoader {
     public static void main(String[] args) {

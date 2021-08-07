@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.designpatterns.cglib;
+package xyz.carjoy.designpatterns.cglib;
 
 public class Main {
 

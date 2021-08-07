@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.jvm;
+package xyz.carjoy.jvm;
 
 /**
  * 缓存行

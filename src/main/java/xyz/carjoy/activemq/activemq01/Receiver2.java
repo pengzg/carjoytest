@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package main.java.xyz.carjoy.activemq.activemq01;
+=======
+package xyz.carjoy.activemq.activemq01;
+>>>>>>> rocketmq
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package main.java.xyz.carjoy.activemq.activemq02;
+=======
+package xyz.carjoy.activemq.activemq02;
+>>>>>>> rocketmq
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
@@ -9,7 +13,13 @@ public class Sender {
         ActiveMQConnectionFactory activeMQConnectionFactory =  new ActiveMQConnectionFactory(
                 ActiveMQConnectionFactory.DEFAULT_USER,
                 ActiveMQConnectionFactory.DEFAULT_PASSWORD,
+<<<<<<< HEAD
                 "tcp://42.192.16.23:61616");
+=======
+//                "tcp://42.192.16.23:61616"
+                "failover:(tcp://42.192.16.23:61616,tcp://42.192.16.23:61617)?Randomize=false"
+        );
+>>>>>>> rocketmq
         activeMQConnectionFactory.setTrustAllPackages(true);
         Connection connection =  activeMQConnectionFactory.createConnection();
         // 添加信任列表

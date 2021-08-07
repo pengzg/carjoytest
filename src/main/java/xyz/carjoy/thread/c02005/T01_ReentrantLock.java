@@ -1,6 +1,6 @@
-package main.java.xyz.carjoy.thread.c02005;
+package xyz.carjoy.thread.c02005;
 
-import main.java.xyz.carjoy.thread.T_001.T;
+import xyz.carjoy.thread.T_001.T;
 import sun.lwawt.macosx.CSystemTray;
 
 import java.util.concurrent.TimeUnit;

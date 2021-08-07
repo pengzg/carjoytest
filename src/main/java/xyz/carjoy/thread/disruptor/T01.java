@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.thread.disruptor;
+package xyz.carjoy.thread.disruptor;
 
 public class T01 {
 }

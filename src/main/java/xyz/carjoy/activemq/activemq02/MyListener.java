@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package main.java.xyz.carjoy.activemq.activemq02;
+=======
+package xyz.carjoy.activemq.activemq02;
+>>>>>>> rocketmq
 
 import javax.jms.*;
 import java.util.Map;

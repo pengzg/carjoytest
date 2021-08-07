@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.thread.threadpool;
+package xyz.carjoy.thread.threadpool;
 
 import java.io.IOException;
 import java.util.Random;
