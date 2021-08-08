@@ -4,10 +4,13 @@ import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
@@ -19,8 +22,13 @@ public class KafkaConsumer03Test {
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
         props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
+        // 指定分区
+        List<TopicPartition> partions = Arrays.asList(new TopicPartition("topic01", 1));
+        kafkaConsumer.assign(partions);
+        kafkaConsumer.seekToBeginning(partions);
 
-        kafkaConsumer.subscribe(Pattern.compile("^topic.*"));
+        kafkaConsumer.seek(new TopicPartition("topic01",1), 1);
+
 
         while (true) {
             ConsumerRecords<String, String> consumerRecords = kafkaConsumer.poll(Duration.ofSeconds(1));
