@@ -7,7 +7,7 @@ import java.util.*;
 public class KafkaDMLTest {
     public static void main(String[] args) throws  Exception{
         Properties props = new Properties();
-        props.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOS:9092");
+        props.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         AdminClient adminClient = KafkaAdminClient.create(props);
 
         // 创建topic信息
