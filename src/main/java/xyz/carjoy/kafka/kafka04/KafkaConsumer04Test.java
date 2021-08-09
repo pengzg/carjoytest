@@ -26,10 +26,14 @@ public class KafkaConsumer04Test {
 //        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
 
+        List<TopicPartition> partitions = Arrays.asList(new TopicPartition("topic01", 0));
         // 手动指定分区  失去组管理特性
-        kafkaConsumer.assign(Arrays.asList(new TopicPartition("topic01",0)));
-
-
+        kafkaConsumer.assign(partitions);
+        // 设置消费的偏移量
+//        kafkaConsumer.seekToBeginning(partitions);
+        // 从topic01的第0个分区的第2个开始消费
+        kafkaConsumer.seek(new TopicPartition("topic01",0), 1);
+        
         while (true) {
             ConsumerRecords<String, String> consumerRecords = kafkaConsumer.poll(Duration.ofSeconds(1));
             if (!consumerRecords.isEmpty()) {

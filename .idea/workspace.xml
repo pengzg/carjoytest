@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka05/KafkaProducerTest05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka05/UserDefinePartitioner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka04/KafkaConsumer04Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka04/KafkaConsumer04Test.java" afterDir="false" />
     </list>
@@ -70,6 +72,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="xyz.carjoy.kafka.kafka05" />
       <recent name="xyz.carjoy.kafka.kafka04" />
       <recent name="xyz.carjoy.kafka.kafka03" />
     </key>
