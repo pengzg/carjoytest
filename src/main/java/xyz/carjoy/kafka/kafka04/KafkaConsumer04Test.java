@@ -12,21 +12,22 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
+/**
+ * kafka 分区管理
+ */
 public class KafkaConsumer04Test {
     public static void main(String[] args) {
         Properties props = new Properties();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
-        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
+//        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
-        // 指定分区
-        List<TopicPartition> partions = Arrays.asList(new TopicPartition("topic01", 1));
-        kafkaConsumer.assign(partions);
-        kafkaConsumer.seekToBeginning(partions);
 
-        kafkaConsumer.seek(new TopicPartition("topic01",1), 1);
+        // 手动指定分区  失去组管理特性
+        kafkaConsumer.assign(Arrays.asList(new TopicPartition("topic01",0)));
 
 
         while (true) {
