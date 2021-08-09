@@ -14,10 +14,10 @@ public class KafkaProducerTest05 {
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
-        props.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, "") ;
+        props.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, UserDefinePartitioner.class.getName()) ;
         //        AdminClient adminClient = KafkaAdminClient.create(props);
         KafkaProducer<String, String> stringStringKafkaProducer = new KafkaProducer<String, String>(props);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 30; i++) {
             ProducerRecord<String, String> topic01 = new ProducerRecord<>("topic01", "key" + i, "val" + i);
             stringStringKafkaProducer.send(topic01);
 
