@@ -4,6 +4,7 @@ import org.apache.kafka.clients.producer.Partitioner;
 import org.apache.kafka.common.Cluster;
 import org.apache.kafka.common.PartitionInfo;
 import org.apache.kafka.common.TopicPartition;
+import org.apache.kafka.common.utils.Utils;
 
 import java.util.List;
 import java.util.Map;
@@ -25,9 +26,9 @@ public class UserDefinePartitioner implements Partitioner {
         if (keyBytes == null){
             int andIncrement = counter.getAndIncrement();
             return (andIncrement & Integer.MAX_VALUE) % numPartitions;
+        } else {
+            return Utils.toPositive(Utils.murmur2(keyBytes)) % numPartitions;
         }
-
-        return 0;
     }
 
     @Override
