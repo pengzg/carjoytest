@@ -24,11 +24,11 @@ public class KafkaConsumer03Test {
         props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
         // 指定分区
-        List<TopicPartition> partions = Arrays.asList(new TopicPartition("topic01", 1));
+        List<TopicPartition> partions = Arrays.asList(new TopicPartition("topic05", 0));
         kafkaConsumer.assign(partions);
         kafkaConsumer.seekToBeginning(partions);
 
-        kafkaConsumer.seek(new TopicPartition("topic01",1), 1);
+        kafkaConsumer.seek(new TopicPartition("topic05",0), 1);
 
 
         while (true) {
@@ -37,12 +37,7 @@ public class KafkaConsumer03Test {
                 Iterator<ConsumerRecord<String, String>> recordsIterator = consumerRecords.iterator();
                 while (recordsIterator.hasNext()) {
                     ConsumerRecord<String, String> record = recordsIterator.next();
-                    System.out.println("topic=>"+record.topic());
-                    System.out.println("partition=>"+record.partition());
-                    System.out.println("offset=>"+record.offset());
-                    System.out.println("key=>"+record.key());
-                    System.out.println("value=>"+record.value());
-                    System.out.println("timestamp=>"+record.timestamp());
+                    System.out.println("topic=>"+record.topic()+",partition=>"+record.partition()+",offset=>"+record.offset()+",key=>"+record.key()+",value=>"+record.value()+",timestamp=>"+record.timestamp());
                 }
             }
         }

@@ -5,9 +5,11 @@ import org.apache.kafka.clients.admin.KafkaAdminClient;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
+import java.util.concurrent.Future;
 
 public class KafkaProducerTest {
     public static void main(String[] args) {
@@ -19,10 +21,12 @@ public class KafkaProducerTest {
         KafkaProducer<String, String> kafkaProducer = new KafkaProducer<String, String>(props);
         for (int i = 0; i < 30; i++) {
             ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic05", "key" + i, "val" + i);
-            kafkaProducer.send(record);
+            Future<RecordMetadata> send = kafkaProducer.send(record);
+            System.out.println(send.toString());
+
 
 
         }
-
+        kafkaProducer.close();
     }
 }

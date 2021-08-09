@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka06/KafkaConsumer06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka06/KafkaProduce06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka01/KafkaDMLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka01/KafkaDMLTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka02/KafkaConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka02/KafkaConsumerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka02/KafkaProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka02/KafkaProducerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka03/KafkaConsumer03Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka03/KafkaConsumer03Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka04/KafkaConsumer04Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka04/KafkaConsumer04Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <recent name="xyz.carjoy.kafka.kafka03" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KafkaConsumerTest">
+  <component name="RunManager" selected="Application.KafkaConsumer06">
     <configuration name="KafkaConsumer03Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka03.KafkaConsumer03Test" />
       <module name="carjoytest" />
@@ -107,6 +107,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KafkaConsumer06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka06.KafkaConsumer06" />
+      <module name="carjoytest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.carjoy.kafka.kafka06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KafkaConsumerTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka02.KafkaConsumerTest" />
       <module name="carjoytest" />
@@ -120,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaDMLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka01.KafkaDMLTest" />
+    <configuration name="KafkaProducer06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka06.KafkaProducer06" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.kafka.kafka01.*" />
+          <option name="PATTERN" value="xyz.carjoy.kafka.kafka06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,18 +161,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.KafkaConsumerTest" />
-      <item itemvalue="Application.KafkaDMLTest" />
       <item itemvalue="Application.KafkaProducerTest" />
       <item itemvalue="Application.KafkaConsumer04Test" />
       <item itemvalue="Application.KafkaConsumer03Test" />
+      <item itemvalue="Application.KafkaProducer06" />
+      <item itemvalue="Application.KafkaConsumer06" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KafkaConsumer06" />
+        <item itemvalue="Application.KafkaProducer06" />
         <item itemvalue="Application.KafkaProducerTest" />
-        <item itemvalue="Application.KafkaConsumerTest" />
-        <item itemvalue="Application.KafkaConsumer03Test" />
-        <item itemvalue="Application.KafkaDMLTest" />
         <item itemvalue="Application.KafkaConsumer04Test" />
+        <item itemvalue="Application.KafkaConsumer03Test" />
       </list>
     </recent_temporary>
   </component>

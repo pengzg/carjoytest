@@ -21,7 +21,7 @@ public class KafkaConsumerTest {
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringDeserializer.class.getName());
-        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g2");
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
 
 //        kafkaConsumer.subscribe(Pattern.compile("^topic.*"));
