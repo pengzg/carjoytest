@@ -24,6 +24,7 @@ public class UserDefinePartitioner implements Partitioner {
 
         if (keyBytes == null){
             int andIncrement = counter.getAndIncrement();
+            return (andIncrement & Integer.MAX_VALUE) % numPartitions;
         }
 
         return 0;
