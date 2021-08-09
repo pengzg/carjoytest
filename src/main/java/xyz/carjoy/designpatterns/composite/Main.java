@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.designpatterns.composite;
+package xyz.carjoy.designpatterns.composite;
 
 public class Main {
 

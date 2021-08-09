@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.nio;
+package xyz.carjoy.nio;
 
 import java.nio.Buffer;
 import java.nio.ByteBuffer;

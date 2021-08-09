@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.designpatterns.staticfactory;
+package xyz.carjoy.designpatterns.staticfactory;
 
 public class Main {
 

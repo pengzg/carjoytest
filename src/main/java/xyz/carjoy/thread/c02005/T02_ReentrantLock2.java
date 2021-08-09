@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.thread.c02005;
+package xyz.carjoy.thread.c02005;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;

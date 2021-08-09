@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.jvm;
+package xyz.carjoy.jvm;
 
 import java.util.HashMap;
 
@@ -15,7 +15,7 @@ public class TestSync {
     }
 
     public static void main(String[] args) {
-        HashMap<String,String> map = new HashMap<>();
-        System.out.println(System.identityHashCode(map));
+//        HashMap<String,String> map = new HashMap<>();
+//        System.out.println(System.identityHashCode(map));
     }
 }

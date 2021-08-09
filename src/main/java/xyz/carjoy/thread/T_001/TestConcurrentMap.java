@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.thread.T_001;
+package xyz.carjoy.thread.T_001;
 
 import java.util.Arrays;
 import java.util.Map;

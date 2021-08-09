@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.designpatterns.spring;
+package xyz.carjoy.designpatterns.spring;
 
 import java.util.Random;
 

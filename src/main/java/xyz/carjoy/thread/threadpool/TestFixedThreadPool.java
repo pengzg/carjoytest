@@ -1,4 +1,4 @@
-package main.java.xyz.carjoy.thread.threadpool;
+package xyz.carjoy.thread.threadpool;
 
 import java.util.ArrayList;
 import java.util.List;
