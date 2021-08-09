@@ -4,6 +4,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
@@ -32,11 +33,12 @@ public class KafkaConsumer06 {
         try {
             while (true) {
                 // 第三步：去服务器消费数据
-                ConsumerRecords<String, String> records = consumer.poll(1000);// 超时时间
+                ConsumerRecords<String, String> records = consumer.poll(Duration.ofSeconds(1));// 超时时间
                 // 第四步：对数据进行处理
                 // 业务逻辑操作
                 for (ConsumerRecord<String, String> record : records) {
-                    System.out.println(record.offset() + ", " + record.key() + ", " + record.value());
+//                    System.out.println(record.offset() + ", " + record.key() + ", " + record.value());
+                    System.out.println("topic=>"+record.topic()+",partition=>"+record.partition()+",offset=>"+record.offset()+",key=>"+record.key()+",value=>"+record.value()+",timestamp=>"+record.timestamp());
                 }
             }
         } catch (Exception e) {

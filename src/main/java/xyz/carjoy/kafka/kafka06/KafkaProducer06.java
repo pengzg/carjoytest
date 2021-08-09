@@ -23,8 +23,7 @@ public class KafkaProducer06 {
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
         //ProducerRecord<String, String> record = new ProducerRecord<>(
         //        "test", "message1");
-        ProducerRecord<String, String> record = new ProducerRecord<>(
-                "test","key1", "message2");
+
         /**
          *
          * 如果发送消息，消息不指定key，那么我们发送的这些消息，会被轮训的发送到不同的分区。
@@ -35,18 +34,23 @@ public class KafkaProducer06 {
         //kafka发送数据有两种方式：
         //1:异步的方式。
         // 这是异步发送的模式
-        producer.send(record, new Callback() {
-            @Override
-            public void onCompletion(RecordMetadata metadata, Exception exception) {
-                if (exception == null) {
-                    // 消息发送成功
-                    System.out.println("消息发送成功");
-                } else {
-                    // 消息发送失败，需要重新发送
+        for (int i = 0; i < 100; i++) {
+            ProducerRecord<String, String> record = new ProducerRecord<>(
+                    "test","key"+i, "message2"+i);
+            producer.send(record, new Callback() {
+                @Override
+                public void onCompletion(RecordMetadata metadata, Exception exception) {
+                    if (exception == null) {
+                        // 消息发送成功
+                        System.out.println("消息发送成功");
+                    } else {
+                        // 消息发送失败，需要重新发送
+                    }
                 }
-            }
 
-        });
+            });
+        }
+
 
         Thread.sleep(10 * 1000);
 

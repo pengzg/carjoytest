@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka06/KafkaConsumer06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka06/KafkaProduce06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka02/KafkaConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka02/KafkaConsumerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka02/KafkaProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka02/KafkaProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka03/KafkaConsumer03Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka03/KafkaConsumer03Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka04/KafkaConsumer04Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka04/KafkaConsumer04Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka06/KafkaConsumer06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka06/KafkaConsumer06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka06/KafkaProducer06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka06/KafkaProducer06.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
       <recent name="xyz.carjoy.kafka.kafka03" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KafkaConsumer06">
+  <component name="RunManager" selected="Application.KafkaProducerTest">
     <configuration name="KafkaConsumer03Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka03.KafkaConsumer03Test" />
       <module name="carjoytest" />
@@ -169,9 +165,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KafkaConsumer06" />
-        <item itemvalue="Application.KafkaProducer06" />
         <item itemvalue="Application.KafkaProducerTest" />
+        <item itemvalue="Application.KafkaProducer06" />
+        <item itemvalue="Application.KafkaConsumer06" />
         <item itemvalue="Application.KafkaConsumer04Test" />
         <item itemvalue="Application.KafkaConsumer03Test" />
       </list>
