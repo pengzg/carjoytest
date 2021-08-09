@@ -11,7 +11,7 @@ public class KafkaDMLTest {
         AdminClient adminClient = KafkaAdminClient.create(props);
 
         // 创建topic信息
-//        CreateTopicsResult topicResult = adminClient.createTopics(Arrays.asList(new NewTopic("topic02", 1, new Short("1"))));
+//        CreateTopicsResult topicResult = adminClient.createTopics(Arrays.asList(new NewTopic("topic05", 1, new Short("1"))));
 //        topicResult.all().get();
         // 查看topic列表
 //        ListTopicsResult listTopicsResult = adminClient.listTopics();
@@ -26,7 +26,7 @@ public class KafkaDMLTest {
 //        deleteTopicsResult.all().get();
 
         // 查看topic详细信息
-        DescribeTopicsResult dtr = adminClient.describeTopics(Arrays.asList("topic02"));
+        DescribeTopicsResult dtr = adminClient.describeTopics(Arrays.asList("topic05"));
         Map<String, TopicDescription> stringTopicDescriptionMap = dtr.all().get();
         for (Map.Entry<String,TopicDescription> entry:stringTopicDescriptionMap.entrySet()) {
             System.out.println(entry.getKey()+"\t"+entry.getValue());

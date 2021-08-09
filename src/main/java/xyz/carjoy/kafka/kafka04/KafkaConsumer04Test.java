@@ -23,7 +23,7 @@ public class KafkaConsumer04Test {
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
-//        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
 
         List<TopicPartition> partitions = Arrays.asList(new TopicPartition("topic01", 0));
