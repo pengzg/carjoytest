@@ -18,7 +18,7 @@ public class KafkaSerializeTest {
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,User.class.getName());
         KafkaProducer<String, User> kafkaProducer = new KafkaProducer<String, User>(props);
         for (int i = 0; i < 30; i++) {
-            ProducerRecord<String, User> record = new ProducerRecord<String, User>("topic05", "key" + i, new User(i,"xiao"+i,20+i));
+            ProducerRecord<String, User> record = new ProducerRecord<String, User>("topicuser", "key" + i, new User(i,"xiao"+i,20+i));
             Future<RecordMetadata> send = kafkaProducer.send(record);
             System.out.println(send.toString());
             
