@@ -18,7 +18,7 @@ public class KafkaSerializeConsumerTest {
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,UserDefineDeserializer.class.getName());
         props.put(ConsumerConfig.GROUP_ID_CONFIG,"g2");
-        KafkaConsumer<String, User> kafkaConsumer = new KafkaConsumer<String, String>(props);
+        KafkaConsumer<String, User> kafkaConsumer = new KafkaConsumer<String, User>(props);
 
 //        kafkaConsumer.subscribe(Pattern.compile("^topic.*"));
         kafkaConsumer.subscribe(Pattern.compile("topicuser"));
