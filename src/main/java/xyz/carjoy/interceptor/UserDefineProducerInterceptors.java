@@ -9,12 +9,12 @@ import java.util.Map;
 public class UserDefineProducerInterceptors implements ProducerInterceptor {
     @Override
     public ProducerRecord onSend(ProducerRecord producerRecord) {
-        return null;
+        return new ProducerRecord(producerRecord.topic(),producerRecord.key(),producerRecord.value()+"caryjoy.xyz");
     }
 
     @Override
     public void onAcknowledgement(RecordMetadata recordMetadata, Exception e) {
-
+        System.out.println("recordMetadata:"+recordMetadata+",Exception:"+e);
     }
 
     @Override
