@@ -1,4 +1,4 @@
-package xyz.carjoy.interceptor;
+package xyz.carjoy.kafka.kafka08;
 
 import org.apache.kafka.clients.producer.ProducerInterceptor;
 import org.apache.kafka.clients.producer.ProducerRecord;
