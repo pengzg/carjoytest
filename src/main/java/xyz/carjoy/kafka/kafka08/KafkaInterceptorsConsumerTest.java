@@ -18,7 +18,7 @@ public class KafkaInterceptorsConsumerTest {
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.GROUP_ID_CONFIG,"g2");
-        props.put(ConsumerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineConsumerInterceptors.class.getName());
+//        props.put(ConsumerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineConsumerInterceptors.class.getName());
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
         kafkaConsumer.subscribe(Pattern.compile("topic08"));
 
