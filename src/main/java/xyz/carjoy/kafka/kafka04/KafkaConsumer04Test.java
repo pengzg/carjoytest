@@ -23,7 +23,7 @@ public class KafkaConsumer04Test {
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
-//        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g1");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g2");
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
 
         List<TopicPartition> partitions = Arrays.asList(new TopicPartition("topic01", 0));
@@ -40,12 +40,7 @@ public class KafkaConsumer04Test {
                 Iterator<ConsumerRecord<String, String>> recordsIterator = consumerRecords.iterator();
                 while (recordsIterator.hasNext()) {
                     ConsumerRecord<String, String> record = recordsIterator.next();
-                    System.out.println("topic=>"+record.topic());
-                    System.out.println("partition=>"+record.partition());
-                    System.out.println("offset=>"+record.offset());
-                    System.out.println("key=>"+record.key());
-                    System.out.println("value=>"+record.value());
-                    System.out.println("timestamp=>"+record.timestamp());
+                    System.out.println("topic=>"+record.topic()+",partition=>"+record.partition()+",offset=>"+record.offset()+",key=>"+record.key()+",value=>"+record.value()+",timestamp=>"+record.timestamp());
                 }
             }
         }
