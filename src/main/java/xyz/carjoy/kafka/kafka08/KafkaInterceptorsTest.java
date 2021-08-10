@@ -18,12 +18,15 @@ public class KafkaInterceptorsTest {
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineProducerInterceptors.class.getName());
-        KafkaProducer<String, User> kafkaProducer = new KafkaProducer<String, User>(props);
+        
+        KafkaProducer<String, String> kafkaProducer = new KafkaProducer<String, String>(props);
         for (int i = 0; i < 30; i++) {
-            ProducerRecord<String, User> record = new ProducerRecord<String, User>("topicuser", "key" + i, new User(i,"xiao"+i,20+i));
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic08", "key" + i, "val" + i);
             Future<RecordMetadata> send = kafkaProducer.send(record);
             System.out.println(send.toString());
-            
+
+
+
         }
         kafkaProducer.close();
 
