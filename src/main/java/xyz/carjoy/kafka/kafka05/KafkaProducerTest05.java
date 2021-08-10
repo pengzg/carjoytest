@@ -21,7 +21,7 @@ public class KafkaProducerTest05 {
             ProducerRecord<String, String> topic01 =
 //                    new ProducerRecord<>("topic01", "key" + i, "val" + i);
                     new ProducerRecord<>("topic01",  "val" + i);
-            stringStringKafkaProducer.send(topic01);                                 :
+            stringStringKafkaProducer.send(topic01);
 
 
         }
