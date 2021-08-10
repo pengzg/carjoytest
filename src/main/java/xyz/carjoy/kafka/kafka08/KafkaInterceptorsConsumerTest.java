@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
-public class KafkaSerializeConsumerTest {
+public class KafkaInterceptorsConsumerTest {
     public static void main(String[] args) {
         Properties props = new Properties();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
