@@ -18,8 +18,10 @@ public class KafkaProducerTest05 {
         //        AdminClient adminClient = KafkaAdminClient.create(props);
         KafkaProducer<String, String> stringStringKafkaProducer = new KafkaProducer<String, String>(props);
         for (int i = 0; i < 30; i++) {
-            ProducerRecord<String, String> topic01 = new ProducerRecord<>("topic01", "key" + i, "val" + i);
-            stringStringKafkaProducer.send(topic01);
+            ProducerRecord<String, String> topic01 =
+//                    new ProducerRecord<>("topic01", "key" + i, "val" + i);
+                    new ProducerRecord<>("topic01",  "val" + i);
+            stringStringKafkaProducer.send(topic01);                                 :
 
 
         }
