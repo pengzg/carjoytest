@@ -15,7 +15,7 @@ public class KafkaSerializeTest {
         Properties props = new Properties();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,User.class.getName());
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,UserDefineSerializer.class.getName());
         KafkaProducer<String, User> kafkaProducer = new KafkaProducer<String, User>(props);
         for (int i = 0; i < 30; i++) {
             ProducerRecord<String, User> record = new ProducerRecord<String, User>("topicuser", "key" + i, new User(i,"xiao"+i,20+i));
