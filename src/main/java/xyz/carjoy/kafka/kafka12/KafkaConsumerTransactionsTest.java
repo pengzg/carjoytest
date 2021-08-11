@@ -11,17 +11,17 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
-public class KafkaConsumerIdempotenceTest {
+public class KafkaConsumerTransactionsTest {
     public static void main(String[] args) {
         Properties props = new Properties();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g11");
-        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"latest");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g12");
+        props.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_committed");
 //        props.put(ConsumerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineConsumerInterceptors.class.getName());
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
-        kafkaConsumer.subscribe(Pattern.compile("topic11"));
+        kafkaConsumer.subscribe(Pattern.compile("topic12"));
 
         while (true) {
             ConsumerRecords<String, String> consumerRecords = kafkaConsumer.poll(Duration.ofSeconds(1));
