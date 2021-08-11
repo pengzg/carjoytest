@@ -32,7 +32,7 @@ public class KafkaProducerTransactionsProducerOnlyTest {
             }
             kafkaProducer.commitTransaction();
         } catch ( Exception e) {
-            System.out.println("exception is :"+e.getMessage());
+            System.out.println("出错了  :"+e.getMessage());
             kafkaProducer.abortTransaction();
         } finally {
             kafkaProducer.close();
