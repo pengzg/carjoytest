@@ -16,26 +16,29 @@ public class KafkaProducerTransactionsProducerOnlyTest {
 
         KafkaProducer<String, String> kafkaProducer = getKafkaProducer();
         kafkaProducer.initTransactions();
+
         try {
-            for (int i = 0; i < 30; i++) {
+            kafkaProducer.beginTransaction();
+            for (int i = 0; i < 10; i++) {
 
                 if (i==8) {
                     int j = 10/8;
                 }
-                ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic12", "tranactions", "error data");
+                ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic12", "tranactions", "error data"+i);
                 Future<RecordMetadata> send = kafkaProducer.send(record);
                 kafkaProducer.flush();
-                System.out.println(send.toString());
-                kafkaProducer.commitTransaction();
+//                System.out.println(send.toString());
+
             }
+            kafkaProducer.commitTransaction();
         } catch ( Exception e) {
             System.out.println("exception is :"+e.getMessage());
             kafkaProducer.abortTransaction();
         } finally {
-
+            kafkaProducer.close();
         }
 
-        kafkaProducer.close();
+
 
     }
 
