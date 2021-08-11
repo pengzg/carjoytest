@@ -79,13 +79,13 @@
       <recent name="xyz.carjoy.kafka.kafka03" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KafkaDMLTest">
-    <configuration name="KafkaConsumerOffsetsTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka09.KafkaConsumerOffsetsTest02" />
+  <component name="RunManager" selected="Application.KafkaProducerAcksTest">
+    <configuration name="KafkaConsumerAcksTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka10.KafkaConsumerAcksTest" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.kafka.kafka09.*" />
+          <option name="PATTERN" value="xyz.carjoy.kafka.kafka10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaProducerOffsetsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka09.KafkaProducerOffsetsTest" />
+    <configuration name="KafkaProducerAcksTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka10.KafkaProducerAcksTest" />
       <module name="carjoytest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.carjoy.kafka.kafka09.*" />
+          <option name="PATTERN" value="xyz.carjoy.kafka.kafka10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,19 +160,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.KafkaConsumerTest" />
-      <item itemvalue="Application.KafkaProducerOffsetsTest" />
-      <item itemvalue="Application.KafkaConsumerOffsetsTest02" />
       <item itemvalue="Application.KafkaConsumerOffsetsTest03" />
       <item itemvalue="Application.KafkaConsumerOffsetsTest04" />
       <item itemvalue="Application.KafkaDMLTest" />
+      <item itemvalue="Application.KafkaProducerAcksTest" />
+      <item itemvalue="Application.KafkaConsumerAcksTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KafkaProducerAcksTest" />
+        <item itemvalue="Application.KafkaConsumerAcksTest" />
         <item itemvalue="Application.KafkaDMLTest" />
         <item itemvalue="Application.KafkaConsumerOffsetsTest04" />
         <item itemvalue="Application.KafkaConsumerOffsetsTest03" />
-        <item itemvalue="Application.KafkaProducerOffsetsTest" />
-        <item itemvalue="Application.KafkaConsumerOffsetsTest02" />
       </list>
     </recent_temporary>
   </component>
