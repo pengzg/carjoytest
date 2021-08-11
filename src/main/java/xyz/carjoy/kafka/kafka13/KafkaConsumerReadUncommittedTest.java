@@ -21,7 +21,7 @@ public class KafkaConsumerReadUncommittedTest {
         props.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_uncommitted");
 //        props.put(ConsumerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineConsumerInterceptors.class.getName());
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
-        kafkaConsumer.subscribe(Pattern.compile("topic12"));
+        kafkaConsumer.subscribe(Pattern.compile("topic13"));
 
         while (true) {
             ConsumerRecords<String, String> consumerRecords = kafkaConsumer.poll(Duration.ofSeconds(1));
