@@ -16,16 +16,22 @@ public class KafkaProducerAcksTest {
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        props.put(ProducerConfig.ACKS_CONFIG, "all");
+        // 3次放弃
+        props.put(ProducerConfig.RETRIES_CONFIG, 3);
+
+        props.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, 1);
 //        props.put(ProducerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineProducerInterceptors.class.getName());
         
         KafkaProducer<String, String> kafkaProducer = new KafkaProducer<String, String>(props);
         
-        for (int i = 0; i < 30; i++) {
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic09", "key" + i, "val" + i);
+//        for (int i = 0; i < 30; i++) {
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic10", "ack", "test ack");
             Future<RecordMetadata> send = kafkaProducer.send(record);
+            kafkaProducer.flush();
             System.out.println(send.toString());
 
-        }
+//        }
         kafkaProducer.close();
 
     }
