@@ -23,11 +23,12 @@ public class KafkaProducerIdempotenceTest {
 
         props.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, 1);
         props.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true);
+        props.put(ProducerConfig.MAX_IN_FLIGHT_REQUESTS_PER_CONNECTION, 1);
         
         KafkaProducer<String, String> kafkaProducer = new KafkaProducer<String, String>(props);
         
 //        for (int i = 0; i < 30; i++) {
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic11", "ack", "test ack");
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic11", "ack", "test Idempotence");
             Future<RecordMetadata> send = kafkaProducer.send(record);
             kafkaProducer.flush();
             System.out.println(send.toString());
