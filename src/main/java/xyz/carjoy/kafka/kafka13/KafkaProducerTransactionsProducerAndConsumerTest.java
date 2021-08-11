@@ -1,6 +1,5 @@
-package xyz.carjoy.kafka.kafka12;
+package xyz.carjoy.kafka.kafka13;
 
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -11,7 +10,7 @@ import java.util.Properties;
 import java.util.UUID;
 import java.util.concurrent.Future;
 
-public class KafkaProducerTransactionsProducerOnlyTest {
+public class KafkaProducerTransactionsProducerAndConsumerTest {
     public static void main(String[] args) {
 
         KafkaProducer<String, String> kafkaProducer = getKafkaProducer();
@@ -24,7 +23,7 @@ public class KafkaProducerTransactionsProducerOnlyTest {
                 if (i==8) {
                     int j = 10/0;
                 }
-                ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic12", "tranactions", "error data"+i);
+                ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic13", "tranactions P and c ", "error data"+i);
                 Future<RecordMetadata> send = kafkaProducer.send(record);
                 kafkaProducer.flush();
                 System.out.println(send.toString());

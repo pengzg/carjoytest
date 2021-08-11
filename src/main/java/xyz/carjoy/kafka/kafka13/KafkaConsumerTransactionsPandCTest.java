@@ -1,4 +1,4 @@
-package xyz.carjoy.kafka.kafka12;
+package xyz.carjoy.kafka.kafka13;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -11,18 +11,10 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
-public class KafkaConsumerTransactionsTest {
+public class KafkaConsumerTransactionsPandCTest {
     public static void main(String[] args) {
-        Properties props = new Properties();
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
-        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-        props.put(ConsumerConfig.GROUP_ID_CONFIG,"g12");
-//        props.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_committed");
-        props.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_committed");
-//        props.put(ConsumerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineConsumerInterceptors.class.getName());
-        KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
-        kafkaConsumer.subscribe(Pattern.compile("topic12"));
+        KafkaConsumer<String, String> kafkaConsumer = getKafkaConsumer("g13");
+        kafkaConsumer.subscribe(Pattern.compile("topic13"));
 
         while (true) {
             ConsumerRecords<String, String> consumerRecords = kafkaConsumer.poll(Duration.ofSeconds(1));
@@ -35,5 +27,18 @@ public class KafkaConsumerTransactionsTest {
                 }
             }
         }
+    }
+
+    private static KafkaConsumer<String, String> getKafkaConsumer(String groupid) {
+        Properties props = new Properties();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"CentOSA:9092,CentOSB:9092,CentOSC:9092");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG,groupid);
+//        props.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_committed");
+        props.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_committed");
+//        props.put(ConsumerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineConsumerInterceptors.class.getName());
+        KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
+        return kafkaConsumer;
     }
 }
