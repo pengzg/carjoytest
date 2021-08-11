@@ -11,7 +11,7 @@ public class KafkaDMLTest {
         AdminClient adminClient = KafkaAdminClient.create(props);
 
         // 创建topic信息
-        CreateTopicsResult topicResult = adminClient.createTopics(Arrays.asList(new NewTopic("topic10", 3, new Short("3"))));
+        CreateTopicsResult topicResult = adminClient.createTopics(Arrays.asList(new NewTopic("topic11", 3, new Short("3"))));
         topicResult.all().get();
         // 查看topic列表
 //        ListTopicsResult listTopicsResult = adminClient.listTopics();

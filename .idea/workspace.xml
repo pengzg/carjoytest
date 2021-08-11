@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14f4cd3-5e0d-42a4-9fc4-a25958f91956" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka11/KafkaConsumerIdempotenceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka11/KafkaProducerIdempotenceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka01/KafkaDMLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka01/KafkaDMLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka10/KafkaConsumerAcksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka10/KafkaConsumerAcksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka10/KafkaProducerAcksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka10/KafkaProducerAcksTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka11" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -65,11 +65,11 @@
       <recent name="xyz.carjoy.rocketmq.rmq09" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/kafka/kafka11" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq10" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq09" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq06" />
       <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq05" />
-      <recent name="$PROJECT_DIR$/src/main/java/xyz/carjoy/rocketmq/rmq04" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="xyz.carjoy.kafka.kafka10" />
@@ -79,7 +79,7 @@
       <recent name="xyz.carjoy.kafka.kafka03" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KafkaProducerAcksTest">
+  <component name="RunManager" selected="Application.KafkaDMLTest">
     <configuration name="KafkaConsumerAcksTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.carjoy.kafka.kafka10.KafkaConsumerAcksTest" />
       <module name="carjoytest" />
@@ -168,9 +168,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KafkaDMLTest" />
         <item itemvalue="Application.KafkaProducerAcksTest" />
         <item itemvalue="Application.KafkaConsumerAcksTest" />
-        <item itemvalue="Application.KafkaDMLTest" />
         <item itemvalue="Application.KafkaConsumerOffsetsTest04" />
         <item itemvalue="Application.KafkaConsumerOffsetsTest03" />
       </list>
