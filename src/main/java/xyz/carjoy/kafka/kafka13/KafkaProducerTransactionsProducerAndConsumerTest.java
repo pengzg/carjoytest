@@ -1,17 +1,16 @@
 package xyz.carjoy.kafka.kafka13;
 
-import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
+import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.UUID;
@@ -32,13 +31,23 @@ public class KafkaProducerTransactionsProducerAndConsumerTest {
         while (true)  {
             ConsumerRecords<String, String> consumerRecords = kafkaConsumer.poll(Duration.ofSeconds(1));
             if (!consumerRecords.isEmpty()) {
+                HashMap<TopicPartition, OffsetAndMetadata> offsets = new HashMap<>();
                 Iterator<ConsumerRecord<String, String>> recordsIterator = consumerRecords.iterator();
 
                 kafkaProducer.beginTransaction();
                 try {
 
+                    while (recordsIterator.hasNext()) {
+                        ConsumerRecord<String, String> record = recordsIterator.next();
+                        offsets.put(new TopicPartition(record.topic(), record.partition()), new OffsetAndMetadata(record.offset()));
+                        ProducerRecord<String, String> pRecord = new ProducerRecord<String, String>("topic1302",record.key(),record.value()+"mashibing");
+                        kafkaProducer.send(pRecord);
+                    }
+                    kafkaProducer.sendOffsetsToTransaction(offsets, "g13");
+                    kafkaProducer.commitTransaction();
                 } catch (Exception e) {
-
+                    System.err.println("错误了"+ e.getMessage());
+                    kafkaProducer.abortTransaction();
                 }  finally {
                     
                 }
@@ -50,30 +59,6 @@ public class KafkaProducerTransactionsProducerAndConsumerTest {
                 }
             }
         }
-
-        
-        try {
-            kafkaProducer.beginTransaction();
-            for (int i = 0; i < 10; i++) {
-
-                if (i==8) {
-                    int j = 10/0;
-                }
-                ProducerRecord<String, String> record = new ProducerRecord<String, String>("topic13", "tranactions P and c ", "error data"+i);
-                Future<RecordMetadata> send = kafkaProducer.send(record);
-                kafkaProducer.flush();
-                System.out.println(send.toString());
-
-            }
-            kafkaProducer.commitTransaction();
-        } catch ( Exception e) {
-            System.out.println("出错了  :"+e.getMessage());
-            kafkaProducer.abortTransaction();
-        } finally {
-
-        }
-
-        kafkaProducer.close();
 
     }
 
