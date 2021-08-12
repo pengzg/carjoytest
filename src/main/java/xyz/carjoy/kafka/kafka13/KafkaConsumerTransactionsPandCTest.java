@@ -35,8 +35,8 @@ public class KafkaConsumerTransactionsPandCTest {
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.GROUP_ID_CONFIG,groupid);
-//        props.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_committed");
         props.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_committed");
+        props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false);
 //        props.put(ConsumerConfig.INTERCEPTOR_CLASSES_CONFIG, UserDefineConsumerInterceptors.class.getName());
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(props);
         return kafkaConsumer;
