@@ -35,6 +35,13 @@ public class KafkaProducerTransactionsProducerAndConsumerTest {
                 Iterator<ConsumerRecord<String, String>> recordsIterator = consumerRecords.iterator();
 
                 kafkaProducer.beginTransaction();
+                try {
+
+                } catch (Exception e) {
+
+                }  finally {
+                    
+                }
 
                 while (recordsIterator.hasNext()) {
                     ConsumerRecord<String, String> record = recordsIterator.next();
