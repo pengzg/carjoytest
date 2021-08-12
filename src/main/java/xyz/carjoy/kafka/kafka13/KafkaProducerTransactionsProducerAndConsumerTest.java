@@ -51,6 +51,7 @@ public class KafkaProducerTransactionsProducerAndConsumerTest {
             }
         }
 
+        
         try {
             kafkaProducer.beginTransaction();
             for (int i = 0; i < 10; i++) {
