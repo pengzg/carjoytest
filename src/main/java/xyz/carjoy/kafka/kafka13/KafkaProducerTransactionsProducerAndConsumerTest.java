@@ -39,6 +39,7 @@ public class KafkaProducerTransactionsProducerAndConsumerTest {
 
                     while (recordsIterator.hasNext()) {
                         ConsumerRecord<String, String> record = recordsIterator.next();
+                        System.out.println("topic=>"+record.topic()+",partition=>"+record.partition()+",offset=>"+record.offset()+",key=>"+record.key()+",value=>"+record.value()+",timestamp=>"+record.timestamp());
                         offsets.put(new TopicPartition(record.topic(), record.partition()), new OffsetAndMetadata(record.offset()));
                         ProducerRecord<String, String> pRecord = new ProducerRecord<String, String>("topic1302",record.key(),record.value()+"mashibing");
                         kafkaProducer.send(pRecord);
