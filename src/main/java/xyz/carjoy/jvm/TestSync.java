@@ -15,7 +15,24 @@ public class TestSync {
     }
 
     public static void main(String[] args) {
-//        HashMap<String,String> map = new HashMap<>();
-//        System.out.println(System.identityHashCode(map));
+
+        String a = "Aa";
+        String b = "BB";
+
+        int aa = a.hashCode();
+        int bb = b.hashCode();
+        System.out.println(aa);
+        System.out.println(bb);
+        HashMap<String,String> map = new HashMap<>();
+        map.put("a", "string");
+        map.put(a, "this is aa");
+        map.put(b, "this is BB");
+
+
+        System.out.println(System.identityHashCode(map));
+        System.out.println(map.hashCode());
+        System.out.println(map.get(a));
+        System.out.println(map.get(b));
+
     }
 }
