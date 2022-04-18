@@ -2,7 +2,7 @@ package xyz.carjoy.thread.threadpool;
 
 import java.util.concurrent.locks.LockSupport;
 
-public class TestLockSupport {
+public class Test01LockSupport {
     static Thread t1 =null,t2=null;
 
     public static void main(String[] args) {
