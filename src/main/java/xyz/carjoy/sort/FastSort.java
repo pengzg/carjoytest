@@ -30,6 +30,10 @@ public class FastSort {
             System.out.print(array[i] + "  ");
         }
     }
+
+    /**
+     * 插入排序法
+     */
     public static  void insertSort() {
         System.out.print("\n1.简单插入排序 ：");
         int array[] = {34, 18, 54, 5, 4, 69, 99, 98, 54, 56};
