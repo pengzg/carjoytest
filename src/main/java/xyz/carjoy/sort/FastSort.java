@@ -22,6 +22,8 @@ public class FastSort {
         sort.radixSort();//基数排序
         sort.binaryInsertSort(array);
 
+        System.out.println("this is test");
+
 
     }
     /**
