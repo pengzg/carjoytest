@@ -18,13 +18,13 @@ public class TestThreadpool {
 
         @Override
         public void run(){
-            System.out.println(Thread.currentThread().getName()+" task"+i);
+            System.out.println(Thread.currentThread().getName()+"==>task"+i);
 
-            try {
-                System.in.read();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                System.in.read();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
         }
 
 
