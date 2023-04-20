@@ -33,8 +33,8 @@ public class User {
         return this.userName.equals(user2.userName) && this.userId.equals(user2.userId);
     }
 
-//    @Override
-//    public int hashCode(){
-//        return userId.hashCode()+userName.hashCode();
-//    }
+    @Override
+    public int hashCode(){
+        return userId.hashCode()+userName.hashCode();
+    }
 }
