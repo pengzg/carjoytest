@@ -53,5 +53,7 @@ public class TestThreadpool {
         tpe.shutdown();
 
         System.out.println("多线程");
+        System.out.println("多线程");
+        System.out.println("多线程");
     }
 }
