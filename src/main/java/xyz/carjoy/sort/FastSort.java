@@ -38,6 +38,8 @@ public class FastSort {
 
     /**
      * 插入排序法
+     * 时间复杂度:O(N^2)
+     * 空间复杂度:
      */
     public static  void insertSort() {
         System.out.print("\n1.简单插入排序 ：");
@@ -55,6 +57,12 @@ public class FastSort {
         }
         printData(array);
     }
+
+    /**
+     * 希尔排序
+     * 时间复杂度:O（N log（N））
+     * 空间复杂度:
+     */
     public static void shellSort() {
         System.out.print("\n2.     希尔排序：");
         int array[] = {34, 18, 54, 5, 4, 69, 99, 98, 54, 56};
@@ -84,6 +92,8 @@ public class FastSort {
      * 简单选择排序
      * 这个思想和代码都是比较简单的啦
      * 选择排序就是（从小到大排序）第一次选择所有数据中最小的数据，和第一个数据交换，然后从剩下的所有数据选择最小的放在第二个位置，以此类推，就可以得到排列好的数据。
+     * 时间复杂度:O（N LOG（N））
+     * 空间复杂度:
      */
 
     public  void selectSort() {
@@ -114,6 +124,8 @@ public class FastSort {
      * 说白了堆排序就是选择排序的一种，就是不断选出最大值，最终完成排序。
      * 但是这里涉及到一个二叉树，二叉树是什么呢？二叉树就是一个根有两个节点或一个节点，并且根节点的值一定比支点的值大，就是那么简单。
      * 堆排序就是不断剔除根节点并不断重新建堆的过程，直到只剩下一个节点，就完成所有的排序了
+     * 时间复杂度:O（n log（n））
+     * 空间复杂度:
      */
     public  void heapSort() {
         System.out.print("\n4.       堆排序：");
@@ -174,6 +186,8 @@ public class FastSort {
      * 冒泡排序也是比较简单的一种，两两比较，这个在逻辑上和代码上都不难想到把
      * 一轮冒泡后，得到最小的值放在第一个位置，第二轮对剩下的数据进行冒泡，再把剩下数据中的最小的放在第二个位置，一次类推
      * 冒泡排序和选择排序在一轮后显示的数据相似，但是过程却是很不一样的。冒泡就是不断的比较，而选择是从所有的选出其中最小的。
+     * 时间复杂度:O（n^2）
+     * 空间复杂度:
      */
     public  void bubbleSort() {
         System.out.print("\n5.     冒泡排序：");
@@ -196,6 +210,8 @@ public class FastSort {
     /**
      * 快速排序
      * 快速排序也是冒泡排序中的一种，但是不一定选中最大或最小值，选中的是任意一个数值，并把它放到适当的游标值的位置，不断对各组数据冒泡，最终得到排列好的数据
+     * 时间复杂度:
+     * 空间复杂度:
      */
     public  void quickSort() {
         System.out.print("\n6.     快速排序：");
@@ -240,6 +256,8 @@ public class FastSort {
     /**
      * 归并排序
      * 其实归并排序和上面说到的希尔排序是有异曲同工的设计思想，都是先把一部分数据排列好，然后让一部分数据插入一部分数据，不断融合，直到完全融合。
+     * 时间复杂度:O(N LOG（N）)
+     * 空间复杂度:
      */
     public  void mergingSort() {
         System.out.print("\n7.     归并排序：");
@@ -296,6 +314,8 @@ public class FastSort {
      * 基数排序
      * 基数排序，比较的是各个数值的位数上的大小
      * 相对来说速度也是不错的，比如第一次就可以比较出只有个位数的数据的大小排列顺序，第二次就可以比较出只有十位和各位的数据，以此类推，一直比较，就会比较完所有的数。
+     * 时间复杂度:O （kn）
+     * 空间复杂度:
      */
     public  void radixSort() {
         System.out.print("\n8.     基数排序：");
@@ -366,6 +386,8 @@ public class FastSort {
      * 负责就移动右游标为middle-1<br>
      * 移动完成后,我们需要将i-1到left之间的值进行依次向后移动给array[i]空出一个位置然后将array[i]插入
      * <p style="color:red">时间复杂度n</p>
+     * 时间复杂度:
+     * 空间复杂度:
      */
     public void binaryInsertSort(int[] array){
         System.out.print("\n9.     二分排序：");
